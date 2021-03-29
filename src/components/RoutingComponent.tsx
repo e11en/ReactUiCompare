@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 
-import MainPage from "../pages/MainPage";
-import ButtonPage from "../pages/ButtonPage";
+import MainPage from "pages/MainPage";
+import ButtonPage from "pages/ButtonPage";
 
 const RoutingComponent = () => {
   return (

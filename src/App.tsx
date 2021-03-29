@@ -8,6 +8,7 @@ import Routing from "./components/RoutingComponent";
 import { useState } from "react";
 
 const Content = styled.div`
+  padding: 1em;
   margin-left: 10em;
 `;
 

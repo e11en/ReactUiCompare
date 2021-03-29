@@ -9,7 +9,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import styled from "styled-components";
 
-import FrameworkContext from "../state/FrameworkContext";
+import FrameworkContext, { Frameworks } from "state/FrameworkContext";
 
 const useStyles = makeStyles(() => ({
   select: {
@@ -51,8 +51,8 @@ const HeaderComponent = ({ onFrameworkChange }: any) => {
             color="secondary"
             onChange={onChangeFramework}
           >
-            <MenuItem value="material-ui">Material-UI</MenuItem>
-            <MenuItem value="ant-design">Ant Design</MenuItem>
+            <MenuItem value={Frameworks.MaterialUi}>Material-UI</MenuItem>
+            <MenuItem value={Frameworks.AntDesign}>Ant Design</MenuItem>
           </Select>
         </FrameworkSelect>
       </Toolbar>
