@@ -6,6 +6,7 @@ import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 import Info from "components/InfoComponent";
+import 'antd/dist/antd.css';
 
 const ButtonWrapper = styled.div`
   & > * {

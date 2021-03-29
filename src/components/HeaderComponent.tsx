@@ -12,6 +12,9 @@ import styled from "styled-components";
 import FrameworkContext, { Frameworks } from "state/FrameworkContext";
 
 const useStyles = makeStyles(() => ({
+  title: {
+    color: "#FFF",
+  },
   select: {
     color: "#FFF",
     "& > *": {
@@ -42,7 +45,9 @@ const HeaderComponent = ({ onFrameworkChange }: any) => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6">React UI Kit Compare</Typography>
+        <Typography variant="h6" className={classes.title}>
+          React UI Kit Compare
+        </Typography>
 
         <FrameworkSelect>
           <Select

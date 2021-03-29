@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
-import 'antd/dist/antd.css';
 
 import FrameworkContext, { Frameworks } from "./state/FrameworkContext";
 import Header from "./components/HeaderComponent";
