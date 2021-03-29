@@ -12,7 +12,7 @@ import FlexWrapper from "components/FlexWrapperComponent";
 
 const ButtonWrapper = styled.div`
   & > * {
-    margin-right: 4px;
+    margin: 0 1em 1em 0;
   }
 `;
 
