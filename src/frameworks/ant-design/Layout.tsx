@@ -47,7 +47,7 @@ const GridWrapper = styled(ElementWrapper)`
 
 const Containers = () => {
   return (
-    <ElementCard fullwidth title="Container">
+    <ElementCard fullwidth title="Layout">
       <LayoutWrapper>
         <AntDesignLayout>
           <Header>Header</Header>
