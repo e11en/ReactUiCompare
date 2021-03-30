@@ -16,15 +16,15 @@ const AppComponent = () => {
   const [framework, setFramework] = useState(Frameworks.AntDesign);
 
   return (
-    <BrowserRouter>
-      <FrameworkContext.Provider value={framework}>
+    <FrameworkContext.Provider value={framework}>
+      <BrowserRouter>
         <Header onFrameworkChange={setFramework} />
         <Menu />
         <Content>
           <Routing />
         </Content>
-      </FrameworkContext.Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </FrameworkContext.Provider>
   );
 };
 

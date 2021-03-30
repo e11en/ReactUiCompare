@@ -2,11 +2,12 @@ import { Button as AntdButton, Dropdown, Menu } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
+import "antd/dist/antd.css";
+
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 import Info from "components/InfoComponent";
-import 'antd/dist/antd.css';
 
 const ButtonWrapper = styled.div`
   & > * {
