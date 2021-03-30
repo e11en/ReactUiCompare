@@ -10,11 +10,7 @@ import Info from "components/InfoComponent";
 
 const { Header, Footer, Sider, Content } = AntDesignLayout;
 
-const ElementWrapper = styled.div`
-  margin-bottom: 1em;
-`;
-
-const LayoutWrapper = styled(ElementWrapper)`
+const LayoutWrapper = styled.div`
   font-size: large;
   text-align: center;
 
@@ -37,7 +33,7 @@ const LayoutWrapper = styled(ElementWrapper)`
   }
 `;
 
-const GridWrapper = styled(ElementWrapper)`
+const GridWrapper = styled.div`
   & > div {
     background: #cfe8fc;
     border: 1px solid #d6d6d6;
@@ -181,9 +177,9 @@ const Grids = () => {
 const Other = () => {
   return (
     <ElementCard title="Other">
-      <ElementWrapper>
+      <div>
         <Divider>Some text</Divider>
-      </ElementWrapper>
+      </div>
       <Code>
         {`
           <Divider>Some text</Divider>

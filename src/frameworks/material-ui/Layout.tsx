@@ -11,10 +11,6 @@ import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 
-const ElementWrapper = styled.div`
-  margin-bottom: 1em;
-`;
-
 const ContainerBox = styled(Container)`
   border: 1px solid #d6d6d6;
   margin: 1em;
@@ -32,7 +28,7 @@ const ContainerBlueBox = styled(Typography)<any>`
 const Containers = () => {
   return (
     <ElementCard fullwidth title="Container">
-      <ElementWrapper>
+      <div>
         <ContainerBox maxWidth="xs">
           <ContainerBlueBox>XS</ContainerBlueBox>
         </ContainerBox>
@@ -48,7 +44,7 @@ const Containers = () => {
         <ContainerBox maxWidth="xl">
           <ContainerBlueBox>XL</ContainerBlueBox>
         </ContainerBox>
-      </ElementWrapper>
+      </div>
       <Code>
         {`
           <Container maxWidth="xs"><Box>XS</Box></Container>
@@ -65,7 +61,7 @@ const Containers = () => {
 const Grids = () => {
   return (
     <ElementCard title="Grid">
-      <ElementWrapper>
+      <div>
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <ContainerBlueBox>xs=12</ContainerBlueBox>
@@ -89,7 +85,7 @@ const Grids = () => {
             <ContainerBlueBox>xs=6 sm=3</ContainerBlueBox>
           </Grid>
         </Grid>
-      </ElementWrapper>
+      </div>
       <Code>
         {`
           <Grid container spacing={3}>
@@ -110,7 +106,7 @@ const Grids = () => {
 const Other = () => {
   return (
     <ElementCard title="Other">
-      <ElementWrapper>
+      <div>
         <GridList cellHeight={160} cols={2}>
           <GridListTile cols={1}>
             <ContainerBlueBox fullheight={1} />
@@ -122,7 +118,7 @@ const Other = () => {
             <ContainerBlueBox fullheight={1} />
           </GridListTile>
         </GridList>
-      </ElementWrapper>
+      </div>
       <Code>
         {`
           <GridList cellHeight={160} cols={2}>

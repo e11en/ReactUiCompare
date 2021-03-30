@@ -29,8 +29,8 @@ const MenuComponent = () => {
         <ListItem button component="a" href="layout">
           Layout
         </ListItem>
-        <ListItem button component="a">
-          Header
+        <ListItem button component="a" href="surface">
+          Surface
         </ListItem>
         <ListItem button component="a">
           Menu

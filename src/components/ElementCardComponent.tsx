@@ -9,6 +9,10 @@ const ElementCard = styled(Card)<ElementCardProps>`
   padding: 1em;
   margin: 1em 1em 1em 0;
   width: ${(props) => (props.fullwidth ? "100vw" : "825px")};
+
+  & > div {
+    margin-bottom: 1em;
+  }
 `;
 
 const TitleDivider = styled(Divider)`
