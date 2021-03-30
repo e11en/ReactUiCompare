@@ -5,7 +5,7 @@ import FrameworkContext, { Frameworks } from "./state/FrameworkContext";
 import Header from "./components/HeaderComponent";
 import Menu from "./components/MenuComponent";
 import Routing from "./components/RoutingComponent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Content = styled.div`
   padding: 1em;
@@ -15,10 +15,20 @@ const Content = styled.div`
 const AppComponent = () => {
   const [framework, setFramework] = useState(Frameworks.AntDesign);
 
+  useEffect(() => {
+    const storedFramework = localStorage.getItem("framework");
+    if (storedFramework !== null) setFramework(storedFramework);
+  }, []);
+
+  const onFrameworkChange = (framework: string) => {
+    setFramework(framework);
+    localStorage.setItem("framework", framework);
+  };
+
   return (
     <FrameworkContext.Provider value={framework}>
       <BrowserRouter>
-        <Header onFrameworkChange={setFramework} />
+        <Header onFrameworkChange={onFrameworkChange} />
         <Menu />
         <Content>
           <Routing />
