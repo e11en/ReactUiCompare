@@ -12,6 +12,7 @@ const useStyles = makeStyles(() => ({
     "& > div": {
       top: "64px",
       width: "10em",
+      position: "absolute",
     },
   },
 }));
