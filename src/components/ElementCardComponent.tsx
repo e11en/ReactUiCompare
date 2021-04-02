@@ -6,6 +6,7 @@ interface ElementCardProps {
 }
 
 const ElementCard = styled(Card)<ElementCardProps>`
+  height: 100%;
   padding: 1em;
   margin: 1em 1em 1em 0;
   width: ${(props) => (props.fullwidth ? "100vw" : "825px")};

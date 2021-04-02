@@ -12,6 +12,7 @@ import {
   IconButton,
   CardMedia,
   CardContent,
+  CardActions,
 } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -119,6 +120,11 @@ const Cards = () => {
               with the mussels, if you like.
             </Typography>
           </CardContent>
+          <CardActions>
+            <IconButton>
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
         </SmallCard>
       </GreyBox>
       <Code>
