@@ -20,6 +20,17 @@ const TitleDivider = styled(Divider)`
   margin-bottom: 1em;
 `;
 
+export const GreyBox = styled.div`
+  background-color: #d6d6d6;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+
+  & > div:nth-child(2) {
+    margin: 0 8px;
+  }
+`;
+
 interface ElementCardComponentProperties {
   fullwidth?: boolean;
   title?: string;

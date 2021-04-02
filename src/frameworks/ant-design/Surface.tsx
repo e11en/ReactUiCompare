@@ -4,22 +4,11 @@ import { HeartFilled, DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
-import ElementCard from "components/ElementCardComponent";
+import ElementCard, { GreyBox } from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 
 const { Meta } = Card;
 const { Panel } = Collapse;
-
-const GreyBox = styled.div`
-  background-color: #d6d6d6;
-  display: flex;
-  padding: 1em;
-  justify-content: center;
-
-  & > div:nth-child(2) {
-    margin: 0 8px;
-  }
-`;
 
 const SmallCard = styled(Card)`
   width: 25em;
