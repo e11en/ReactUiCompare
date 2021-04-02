@@ -6,6 +6,7 @@ import {
   ListSubheader,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { useLocation } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
   drawer: {
@@ -18,56 +19,48 @@ const useStyles = makeStyles(() => ({
 }));
 
 const MenuComponent = () => {
+  const { pathname } = useLocation();
   const classes = useStyles();
+
+  const MenuItem = ({ name }: { name: string }) => {
+    const selected = pathname?.replace("/", "") === name;
+
+    return (
+      <ListItem
+        button
+        component="a"
+        href={name.toLowerCase()}
+        selected={selected}
+      >
+        {name}
+      </ListItem>
+    );
+  };
 
   return (
     <Drawer variant="permanent" className={classes.drawer}>
       <List>
-        <ListItem button component="a" href="button">
-          Button
-        </ListItem>
-        <ListItem button component="a" href="layout">
-          Layout
-        </ListItem>
-        <ListItem button component="a" href="surface">
-          Surface
-        </ListItem>
-        <ListItem button component="a">
-          Menu
-        </ListItem>
-        <ListItem button component="a">
-          Theming
-        </ListItem>
+        <MenuItem name="Button" />
+        <MenuItem name="Layout" />
+        <MenuItem name="Surface" />
+        <MenuItem name="Navigation" />
+        <MenuItem name="Theming" />
 
         <Divider />
         <ListSubheader>Form</ListSubheader>
-        <ListItem button component="a">
-          Input
-        </ListItem>
-        <ListItem button component="a">
-          Select
-        </ListItem>
-        <ListItem button component="a">
-          Datepicker
-        </ListItem>
+        <MenuItem name="Input" />
+        <MenuItem name="Select" />
+        <MenuItem name="Datepicker" />
 
         <Divider />
         <ListSubheader>Data</ListSubheader>
-        <ListItem button component="a">
-          Table
-        </ListItem>
-        <ListItem button component="a">
-          Graphs & charts
-        </ListItem>
+        <MenuItem name="Table" />
+        <MenuItem name="Graphs & charts" />
 
         <Divider />
         <ListSubheader>Notification</ListSubheader>
-        <ListItem button component="a">
-          Alert
-        </ListItem>
-        <ListItem button component="a">
-          Popup
-        </ListItem>
+        <MenuItem name="Alert" />
+        <MenuItem name="Popup" />
       </List>
     </Drawer>
   );

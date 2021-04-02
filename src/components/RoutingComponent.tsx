@@ -4,6 +4,7 @@ import MainPage from "pages/MainPage";
 import ButtonPage from "pages/ButtonPage";
 import LayoutPage from "pages/LayoutPage";
 import SurfacePage from "pages/SurfacePage";
+import NavigationPage from "pages/NavigationPage";
 
 const RoutingComponent = () => {
   return (
@@ -12,6 +13,8 @@ const RoutingComponent = () => {
       <Route component={ButtonPage} path="/button" exact />
       <Route component={LayoutPage} path="/layout" exact />
       <Route component={SurfacePage} path="/surface" exact />
+      <Route component={NavigationPage} path="/navigation" exact />
+      <Route render={() => <span>Not available</span>} />
     </Switch>
   );
 };

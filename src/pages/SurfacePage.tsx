@@ -5,7 +5,7 @@ import { getComponentByFramework } from "helpers/pageHelpers";
 import { Surface as AntDesignSurface } from "frameworks/ant-design";
 import { Surface as MaterialUISurface } from "frameworks/material-ui";
 
-const HeaderPage = () => {
+const SurfacePage = () => {
   const framework = useContext(FrameworkContext);
 
   return getComponentByFramework(framework, {
@@ -14,4 +14,4 @@ const HeaderPage = () => {
   });
 };
 
-export default HeaderPage;
+export default SurfacePage;
