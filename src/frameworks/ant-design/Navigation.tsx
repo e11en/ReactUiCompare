@@ -1,0 +1,180 @@
+import { Breadcrumb, Menu, Dropdown, Button, Steps, Pagination } from "antd";
+import "antd/dist/antd.css";
+
+import Code from "components/CodeComponent";
+import ElementCard from "components/ElementCardComponent";
+import FlexWrapper from "components/FlexWrapperComponent";
+import React from "react";
+
+const { Step } = Steps;
+
+const Breadcrumbs = () => {
+  return (
+    <ElementCard title="Breadcrumb">
+      <div>
+        <Breadcrumb>
+          <Breadcrumb.Item>
+            <a href="">Home</a>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
+            <a href="">Group</a>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>
+            <a href="">Page</a>
+          </Breadcrumb.Item>
+        </Breadcrumb>
+      </div>
+      <Code>
+        {`
+          <Breadcrumb>
+            <Breadcrumb.Item>
+              <a href="">Home</a>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <a href="">Group</a>
+            </Breadcrumb.Item>
+            <Breadcrumb.Item>
+              <a href="">Page</a>
+            </Breadcrumb.Item>
+          </Breadcrumb>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
+const Menus = () => {
+  return (
+    <ElementCard title="Menu">
+      <div>
+        <Dropdown
+          overlay={
+            <Menu>
+              <Menu.Item>
+                <a href="#">Item 1</a>
+              </Menu.Item>
+              <Menu.Item>
+                <a href="#">Item 2</a>
+              </Menu.Item>
+              <Menu.Item disabled>
+                <a href="#">Item 3</a>
+              </Menu.Item>
+            </Menu>
+          }
+          placement="bottomLeft"
+        >
+          <Button>Open menu</Button>
+        </Dropdown>
+      </div>
+      <Code>
+        {`
+          <Dropdown
+            overlay={
+              <Menu>
+                <Menu.Item>
+                  <a href="#">Item 1</a>
+                </Menu.Item>
+                <Menu.Item>
+                  <a href="#">Item 2</a>
+                </Menu.Item>
+                <Menu.Item>
+                  <a href="#">Item 3</a>
+                </Menu.Item>
+              </Menu>
+            }
+            placement="bottomLeft">
+            <Button>Open menu</Button>
+          </Dropdown>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
+const Stepper = () => {
+  return (
+    <ElementCard title="Stepper">
+      <div>
+        <Steps current={1}>
+          <Step title="Step 1" />
+          <Step title="Step 2" />
+          <Step title="Step 3" />
+        </Steps>
+      </div>
+      <Code>
+        {`
+          <Steps current={1}>
+            <Step title="Step 1" />
+            <Step title="Step 2" />
+            <Step title="Step 3" />
+          </Steps>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
+const Tabs = () => {
+  const [value, setValue] = React.useState("1");
+
+  return (
+    <ElementCard title="Tabs">
+      <div>
+        <Menu
+          selectedKeys={[value]}
+          onClick={(e) => setValue(e.key.toString())}
+          mode="horizontal"
+        >
+          <Menu.Item key="1">Selected</Menu.Item>
+          <Menu.Item key="2" disabled>
+            Disabled
+          </Menu.Item>
+          <Menu.Item key="3">Active</Menu.Item>
+        </Menu>
+      </div>
+      <Code>
+        {`
+          const [value, setValue] = React.useState("1");
+          
+          <Menu
+            selectedKeys={[value]}
+            onClick={(e) => setValue(e.key.toString())}
+            mode="horizontal">
+            <Menu.Item key="1">Selected</Menu.Item>
+            <Menu.Item key="2" disabled>
+              Disabled
+            </Menu.Item>
+            <Menu.Item key="3">Active</Menu.Item>
+          </Menu>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
+const Paginations = () => {
+  return (
+    <ElementCard title="Pagination">
+      <div>
+        <Pagination defaultCurrent={1} total={50} />
+      </div>
+      <Code>
+        {`
+          <Pagination defaultCurrent={1} total={50} />
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
+export const Navigation = () => {
+  return (
+    <FlexWrapper>
+      <Breadcrumbs />
+      <Menus />
+      <Stepper />
+      <Tabs />
+      <Paginations />
+    </FlexWrapper>
+  );
+};

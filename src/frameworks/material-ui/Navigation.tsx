@@ -48,7 +48,7 @@ const BottomNav = () => {
 
 const Breadcrumb = () => {
   return (
-    <ElementCard title="Breadcrumbs">
+    <ElementCard title="Breadcrumb">
       <div>
         <Breadcrumbs>
           <Link color="inherit" href="#1">
@@ -269,12 +269,12 @@ const TabBar = () => {
 export const Navigation = () => {
   return (
     <FlexWrapper>
-      <BottomNav />
       <Breadcrumb />
-      <Drawers />
       <OverlayMenu />
       <Steppers />
       <TabBar />
+      <BottomNav />
+      <Drawers />
     </FlexWrapper>
   );
 };

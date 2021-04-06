@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Card, Avatar, Collapse } from "antd";
+import { Card, Avatar, Collapse, PageHeader } from "antd";
 import { HeartFilled, DownOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
 
@@ -13,6 +13,32 @@ const { Panel } = Collapse;
 const SmallCard = styled(Card)`
   width: 25em;
 `;
+
+const ToolBar = styled.div`
+  border: 1px solid #d9d9d9;
+`;
+
+const AppToolBar = () => {
+  return (
+    <ElementCard title="App tool bar">
+      <ToolBar>
+        <PageHeader
+          className="site-page-header"
+          onBack={() => null}
+          title="Some title"
+        />
+      </ToolBar>
+      <Code>
+        {`
+          <PageHeader
+            className="site-page-header"
+            onBack={() => null}
+            title="Some title"/>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
 
 const Cards = () => {
   return (
@@ -111,8 +137,9 @@ const Accordions = () => {
 export const Surface = () => {
   return (
     <FlexWrapper>
-      <Cards />
+      <AppToolBar />
       <Accordions />
+      <Cards />
     </FlexWrapper>
   );
 };
