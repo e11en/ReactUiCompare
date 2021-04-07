@@ -8,18 +8,11 @@ import {
   IconButton,
 } from "@material-ui/core";
 import { useState } from "react";
-import styled from "styled-components";
 import CloseIcon from "@material-ui/icons/Close";
 
 import Code from "components/CodeComponent";
-import ElementCard from "components/ElementCardComponent";
+import ElementCard, { SpacedChildren } from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
-
-const SpacedChildren = styled.div`
-  & > * {
-    margin: 1em;
-  }
-`;
 
 const Dialogs = () => {
   const [open, setOpen] = useState(false);

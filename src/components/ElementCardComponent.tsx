@@ -31,6 +31,12 @@ export const GreyBox = styled.div`
   }
 `;
 
+export const SpacedChildren = styled.div`
+  & > * {
+    margin: 1em;
+  }
+`;
+
 interface ElementCardComponentProperties {
   fullwidth?: boolean;
   title?: string;

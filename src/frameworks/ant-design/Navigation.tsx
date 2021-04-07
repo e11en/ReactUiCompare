@@ -1,10 +1,18 @@
-import { Breadcrumb, Menu, Dropdown, Button, Steps, Pagination } from "antd";
+import React, { useState } from "react";
+import {
+  Breadcrumb,
+  Menu,
+  Dropdown,
+  Button,
+  Steps,
+  Pagination,
+  Drawer,
+} from "antd";
 import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
-import React from "react";
 
 const Breadcrumbs = () => {
   return (
@@ -150,6 +158,59 @@ const Tabs = () => {
   );
 };
 
+const Drawers = () => {
+  const [state, setState] = useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const directions: ("left" | "right" | "top" | "bottom")[] = [
+    "left",
+    "right",
+    "top",
+    "bottom",
+  ];
+
+  const toggleDrawer = (anchor: string, open: boolean) => () =>
+    setState({ ...state, [anchor]: open });
+
+  return (
+    <ElementCard title="Drawer">
+      <div>
+        {directions.map((anchor) => (
+          <React.Fragment key={anchor}>
+            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+            <Drawer
+              title="Drawer"
+              placement={anchor}
+              onClose={toggleDrawer(anchor, false)}
+              visible={state[anchor]}
+            >
+              <p>Hello!</p>
+            </Drawer>
+          </React.Fragment>
+        ))}
+      </div>
+      <Code>
+        {`
+          const [isOpen, setIsOpen] = useState();
+
+          <Drawer
+            title="Drawer"
+            placement="left"
+            onClose={setIsOpen()}
+            visible={isOpen}
+          >
+            <p>Hello!</p>
+          </Drawer>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
 const Paginations = () => {
   return (
     <ElementCard title="Pagination">
@@ -172,6 +233,7 @@ export const Navigation = () => {
       <Menus />
       <Stepper />
       <Tabs />
+      <Drawers />
       <Paginations />
     </FlexWrapper>
   );

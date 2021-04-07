@@ -273,8 +273,8 @@ export const Navigation = () => {
       <OverlayMenu />
       <Steppers />
       <TabBar />
-      <BottomNav />
       <Drawers />
+      <BottomNav />
     </FlexWrapper>
   );
 };

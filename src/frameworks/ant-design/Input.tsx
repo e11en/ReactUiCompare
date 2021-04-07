@@ -18,17 +18,15 @@ import {
 import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
-import ElementCard from "components/ElementCardComponent";
+import ElementCard, {
+  SpacedChildren as SpacedChildrenBase,
+} from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 import Info from "components/InfoComponent";
 
-const SpacedChildren = styled.div`
+const SpacedChildren = styled(SpacedChildrenBase)`
   && {
     margin-bottom: 2em;
-  }
-
-  & > * {
-    margin: 1em;
   }
 `;
 

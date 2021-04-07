@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 const useStyles = makeStyles(() => ({
   drawer: {
     "& > div": {
+      zIndex: 0,
       top: "64px",
       width: "10em",
       position: "absolute",
