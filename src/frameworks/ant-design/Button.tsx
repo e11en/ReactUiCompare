@@ -1,5 +1,5 @@
-import { Button as AntdButton, Dropdown, Menu } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
+import { Button as AntdButton, Dropdown, Menu, Upload } from "antd";
+import { SearchOutlined, UploadOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
 import "antd/dist/antd.css";
@@ -125,6 +125,25 @@ const ButtonGroups = () => {
   );
 };
 
+const UploadButton = () => {
+  return (
+    <ElementCard title="Upload">
+      <div>
+        <Upload>
+          <AntdButton icon={<UploadOutlined />}>Click to Upload</AntdButton>
+        </Upload>
+      </div>
+      <Code>
+        {`
+          <Upload>
+            <Button icon={<UploadOutlined />}>Click to Upload</Button>
+          </Upload>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
 export const Button = () => {
   return (
     <FlexWrapper>
@@ -132,6 +151,7 @@ export const Button = () => {
       <ButtonVariations />
       <ButtonSizes />
       <ButtonGroups />
+      <UploadButton />
     </FlexWrapper>
   );
 };

@@ -6,8 +6,6 @@ import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 import React from "react";
 
-const { Step } = Steps;
-
 const Breadcrumbs = () => {
   return (
     <ElementCard title="Breadcrumb">
@@ -96,17 +94,17 @@ const Stepper = () => {
     <ElementCard title="Stepper">
       <div>
         <Steps current={1}>
-          <Step title="Step 1" />
-          <Step title="Step 2" />
-          <Step title="Step 3" />
+          <Steps.Step title="Step 1" />
+          <Steps.Step title="Step 2" />
+          <Steps.Step title="Step 3" />
         </Steps>
       </div>
       <Code>
         {`
           <Steps current={1}>
-            <Step title="Step 1" />
-            <Step title="Step 2" />
-            <Step title="Step 3" />
+            <Steps.Step title="Step 1" />
+            <Steps.Step title="Step 2" />
+            <Steps.Step title="Step 3" />
           </Steps>
         `}
       </Code>

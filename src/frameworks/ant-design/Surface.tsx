@@ -7,9 +7,6 @@ import Code from "components/CodeComponent";
 import ElementCard, { GreyBox } from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 
-const { Meta } = Card;
-const { Panel } = Collapse;
-
 const SmallCard = styled(Card)`
   width: 25em;
 `;
@@ -59,7 +56,7 @@ const Cards = () => {
           }
           actions={[<DownOutlined />]}
         >
-          <Meta
+          <Card.Meta
             avatar={<Avatar>R</Avatar>}
             title="Shrimp and Chorizo Paella"
             description="This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."
@@ -85,7 +82,7 @@ const Cards = () => {
             }
             actions={[<DownOutlined />]}
           >
-            <Meta
+            <Card.Meta
               avatar={<Avatar>R</Avatar>}
               title="Shrimp and Chorizo Paella"
               description="This impressive paella is...."
@@ -104,29 +101,29 @@ const Accordions = () => {
     <ElementCard title="Accordion">
       <div>
         <Collapse defaultActiveKey={["1"]}>
-          <Panel header="Accordion 1" key="1">
+          <Collapse.Panel header="Accordion 1" key="1">
             <p>Some text</p>
-          </Panel>
-          <Panel header="Accordion 2" key="2">
+          </Collapse.Panel>
+          <Collapse.Panel header="Accordion 2" key="2">
             <p>Some text</p>
-          </Panel>
-          <Panel header="Accordion 3" key="3">
+          </Collapse.Panel>
+          <Collapse.Panel header="Accordion 3" key="3">
             <p>Some text</p>
-          </Panel>
+          </Collapse.Panel>
         </Collapse>
       </div>
       <Code>
         {`
           <Collapse defaultActiveKey={["1"]}>
-            <Panel header="Accordion 1" key="1">
+            <Collapse.Panel header="Accordion 1" key="1">
               <p>Some text</p>
-            </Panel>
-            <Panel header="Accordion 2" key="2">
+            </Collapse.Panel>
+            <Collapse.Panel header="Accordion 2" key="2">
               <p>Some text</p>
-            </Panel>
-            <Panel header="Accordion 3" key="3">
+            </Collapse.Panel>
+            <Collapse.Panel header="Accordion 3" key="3">
               <p>Some text</p>
-            </Panel>
+            </Collapse.Panel>
           </Collapse>
         `}
       </Code>

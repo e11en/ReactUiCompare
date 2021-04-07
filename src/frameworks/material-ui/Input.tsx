@@ -52,9 +52,9 @@ const Fields = () => {
           label="Adornments"
           InputProps={{
             startAdornment: (
-              <InputAdornment position="start">Kg</InputAdornment>
+              <InputAdornment position="start">http://</InputAdornment>
             ),
-            endAdornment: <InputAdornment position="end">€</InputAdornment>,
+            endAdornment: <InputAdornment position="end">.com</InputAdornment>,
           }}
         />
       </div>
@@ -69,8 +69,8 @@ const Fields = () => {
           <SpacedTextField label="Multiline" multiline />
           <SpacedTextField label="Adornments"
             InputProps={{
-              startAdornment: <InputAdornment position="start">Kg</InputAdornment>,
-              endAdornment: <InputAdornment position="end">€</InputAdornment>
+              startAdornment: <InputAdornment position="start">http://</InputAdornment>,
+              endAdornment: <InputAdornment position="end">.com</InputAdornment>
             }}
           />
         `}

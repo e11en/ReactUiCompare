@@ -8,8 +8,6 @@ import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 import Info from "components/InfoComponent";
 
-const { Header, Footer, Sider, Content } = AntDesignLayout;
-
 const LayoutWrapper = styled.div`
   font-size: large;
   text-align: center;
@@ -46,70 +44,70 @@ const Containers = () => {
     <ElementCard fullwidth title="Layout">
       <LayoutWrapper>
         <AntDesignLayout>
-          <Header>Header</Header>
-          <Content>Content</Content>
-          <Footer>Footer</Footer>
+          <AntDesignLayout.Header>Header</AntDesignLayout.Header>
+          <AntDesignLayout.Content>Content</AntDesignLayout.Content>
+          <AntDesignLayout.Footer>Footer</AntDesignLayout.Footer>
         </AntDesignLayout>
 
         <AntDesignLayout>
-          <Header>Header</Header>
+          <AntDesignLayout.Header>Header</AntDesignLayout.Header>
           <AntDesignLayout>
-            <Sider>Sider</Sider>
-            <Content>Content</Content>
+            <AntDesignLayout.Sider>Sider</AntDesignLayout.Sider>
+            <AntDesignLayout.Content>Content</AntDesignLayout.Content>
           </AntDesignLayout>
-          <Footer>Footer</Footer>
+          <AntDesignLayout.Footer>Footer</AntDesignLayout.Footer>
         </AntDesignLayout>
 
         <AntDesignLayout>
-          <Header>Header</Header>
+          <AntDesignLayout.Header>Header</AntDesignLayout.Header>
           <AntDesignLayout>
-            <Content>Content</Content>
-            <Sider>Sider</Sider>
+            <AntDesignLayout.Content>Content</AntDesignLayout.Content>
+            <AntDesignLayout.Sider>Sider</AntDesignLayout.Sider>
           </AntDesignLayout>
-          <Footer>Footer</Footer>
+          <AntDesignLayout.Footer>Footer</AntDesignLayout.Footer>
         </AntDesignLayout>
 
         <AntDesignLayout>
-          <Sider>Sider</Sider>
+          <AntDesignLayout.Sider>Sider</AntDesignLayout.Sider>
           <AntDesignLayout>
-            <Header>Header</Header>
-            <Content>Content</Content>
-            <Footer>Footer</Footer>
+            <AntDesignLayout.Header>Header</AntDesignLayout.Header>
+            <AntDesignLayout.Content>Content</AntDesignLayout.Content>
+            <AntDesignLayout.Footer>Footer</AntDesignLayout.Footer>
           </AntDesignLayout>
         </AntDesignLayout>
       </LayoutWrapper>
       <Code>
         {`
           <Layout>
-            <Header>Header</Header>
-            <Content>Content</Content>
-            <Footer>Footer</Footer>
+            <Layout.Header>Header</Layout.Header>
+            <Layout.Content>Content</Layout.Content>
+            <Layout.Footer>Footer</Layout.Footer>
           </Layout>
         
           <Layout>
-            <Header>Header</Header>
+            <Layout.Header>Header</Layout.Header>
             <Layout>
-              <Sider>Sider</Sider>
-              <Content>Content</Content>
+              <Layout.Sider>Sider</Layout.Sider>
+              <Layout.Content>Content</Layout.Content>
             </Layout>
-            <Footer>Footer</Footer>
+            <Layout.Footer>Footer</Layout.Footer>
           </Layout>
         
           <Layout>
-            <Header>Header</Header>
+            <Layout.Header>Header</Layout.Header>
             <Layout>
-              <Content>Content</Content>
-              <Sider>Sider</Sider>
+              <Layout.Content>Content</Layout.Content>
+              <Layout.Sider>Sider</Layout.Sider>
             </Layout>
-            <Footer>Footer</Footer>
+            <Layout.Footer>Footer</Layout.Footer>
           </Layout>
       
           <Layout>
-            <Sider>Sider</Sider>
+            <Layout.Sider>Sider</Layout.Sider>
             <Layout>
-              <Header>Header</Header>
-              <Content>Content</Content>
-              <Footer>Footer</Footer>
+              <Layout.Header>Header</Layout.Header>
+              <Layout.Content>Content</Layout.Content>
+              <Layout.Footer>Footer</Layout.Footer>
             </Layout>
           </Layout>
         `}
