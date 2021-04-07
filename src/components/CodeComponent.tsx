@@ -1,15 +1,19 @@
 import React from "react";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { monokai } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 interface CodeComponentProperties {
   children?: React.ReactNode;
+  language?: string;
 }
 
-const CodeComponent = ({children}: CodeComponentProperties) => {
+const CodeComponent = ({
+  children,
+  language = "htmlbars",
+}: CodeComponentProperties) => {
   return (
-    <SyntaxHighlighter language="htmlbars" style={monokai}>
-        {children}
+    <SyntaxHighlighter language={language} style={monokai}>
+      {children}
     </SyntaxHighlighter>
   );
 };

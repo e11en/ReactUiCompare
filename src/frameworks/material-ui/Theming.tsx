@@ -68,7 +68,7 @@ const StyledComponent = () => {
   return (
     <ElementCard title="Styled component">
       <div>
-        By using the samen <i>makeStyles</i> method we can create "styled
+        By using the same <i>makeStyles</i> method we can create "styled
         component". This also works for a package like Styled-Components or Em
       </div>
       <Code>
