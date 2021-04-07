@@ -6,6 +6,7 @@ import LayoutPage from "pages/LayoutPage";
 import SurfacePage from "pages/SurfacePage";
 import NavigationPage from "pages/NavigationPage";
 import ThemingPage from "pages/ThemingPage";
+import InputPage from "pages/InputPage";
 
 const RoutingComponent = () => {
   return (
@@ -16,6 +17,7 @@ const RoutingComponent = () => {
       <Route component={SurfacePage} path="/surface" exact />
       <Route component={NavigationPage} path="/navigation" exact />
       <Route component={ThemingPage} path="/theming" exact />
+      <Route component={InputPage} path="/input" exact />
       <Route render={() => <span>Not available</span>} />
     </Switch>
   );

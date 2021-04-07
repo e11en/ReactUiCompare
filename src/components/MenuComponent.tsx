@@ -40,27 +40,20 @@ const MenuComponent = () => {
   return (
     <Drawer variant="permanent" className={classes.drawer}>
       <List>
+        <ListSubheader>Components</ListSubheader>
         <MenuItem name="Button" />
         <MenuItem name="Layout" />
         <MenuItem name="Surface" />
         <MenuItem name="Navigation" />
-        <MenuItem name="Theming" />
-
-        <Divider />
-        <ListSubheader>Form</ListSubheader>
         <MenuItem name="Input" />
-        <MenuItem name="Select" />
-        <MenuItem name="Datepicker" />
-
-        <Divider />
-        <ListSubheader>Data</ListSubheader>
+        <MenuItem name="Notifications" />
         <MenuItem name="Table" />
         <MenuItem name="Graphs & charts" />
 
         <Divider />
-        <ListSubheader>Notification</ListSubheader>
-        <MenuItem name="Alert" />
-        <MenuItem name="Popup" />
+        <ListSubheader>Research</ListSubheader>
+        <MenuItem name="Theming" />
+        <MenuItem name="Conclusion" />
       </List>
     </Drawer>
   );

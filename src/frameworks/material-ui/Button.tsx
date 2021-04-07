@@ -2,8 +2,10 @@ import {
   Button as MUIButton,
   ButtonGroup,
   IconButton,
+  Fab,
 } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
+import AddIcon from "@material-ui/icons/Add";
 import styled from "styled-components";
 
 import Code from "components/CodeComponent";
@@ -55,6 +57,9 @@ const ButtonVariations = () => {
         <IconButton>
           <DeleteIcon />
         </IconButton>
+        <Fab color="primary">
+          <AddIcon />
+        </Fab>
       </ButtonWrapper>
       <Code>
         {`
@@ -62,6 +67,7 @@ const ButtonVariations = () => {
           <Button variant="outlined">Outlined</Button>
           <Button startIcon={<DeleteIcon />}>Button with icon</Button>
           <IconButton><DeleteIcon /></IconButton>
+          <Fab color="primary"><AddIcon /></Fab>
         `}
       </Code>
     </ElementCard>

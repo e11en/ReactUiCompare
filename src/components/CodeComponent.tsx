@@ -1,6 +1,6 @@
 import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 interface CodeComponentProperties {
   children?: React.ReactNode;
@@ -9,10 +9,10 @@ interface CodeComponentProperties {
 
 const CodeComponent = ({
   children,
-  language = "htmlbars",
+  language = "jsx",
 }: CodeComponentProperties) => {
   return (
-    <SyntaxHighlighter language={language} style={monokai}>
+    <SyntaxHighlighter language={language} style={prism}>
       {children}
     </SyntaxHighlighter>
   );
