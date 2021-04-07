@@ -47,8 +47,7 @@ const MenuComponent = () => {
         <MenuItem name="Navigation" />
         <MenuItem name="Input" />
         <MenuItem name="Notifications" />
-        <MenuItem name="Table" />
-        <MenuItem name="Graphs & charts" />
+        <MenuItem name="Data" />
 
         <Divider />
         <ListSubheader>Research</ListSubheader>
