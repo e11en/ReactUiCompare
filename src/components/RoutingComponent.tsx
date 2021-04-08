@@ -1,29 +1,55 @@
 import { Switch, Route } from "react-router-dom";
 
 import MainPage from "pages/MainPage";
-import ButtonPage from "pages/ButtonPage";
-import LayoutPage from "pages/LayoutPage";
-import SurfacePage from "pages/SurfacePage";
-import NavigationPage from "pages/NavigationPage";
-import ThemingPage from "pages/ThemingPage";
-import InputPage from "pages/InputPage";
-import NotificationPage from "pages/NotificationPage";
-import DataPage from "pages/DataPage";
 import ComponentListPage from "pages/ComponentListPage";
+import Page from "pages/Page";
 
 const RoutingComponent = () => {
   return (
     <Switch>
       <Route component={MainPage} path="/" exact />
-      <Route component={ButtonPage} path="/button" exact />
-      <Route component={LayoutPage} path="/layout" exact />
-      <Route component={SurfacePage} path="/surface" exact />
-      <Route component={NavigationPage} path="/navigation" exact />
-      <Route component={ThemingPage} path="/theming" exact />
-      <Route component={InputPage} path="/input" exact />
-      <Route component={NotificationPage} path="/notifications" exact />
-      <Route component={DataPage} path="/data" exact />
       <Route component={ComponentListPage} path="/component-list" exact />
+      <Route
+        component={(props: any) => <Page type="button" {...props} />}
+        path="/button"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="layout" {...props} />}
+        path="/layout"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="surface" {...props} />}
+        path="/surface"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="navigation" {...props} />}
+        path="/navigation"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="theming" {...props} />}
+        path="/theming"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="input" {...props} />}
+        path="/input"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="notifications" {...props} />}
+        path="/notifications"
+        exact
+      />
+      <Route
+        component={(props: any) => <Page type="data" {...props} />}
+        path="/data"
+        exact
+      />
+
       <Route render={() => <span>Not available</span>} />
     </Switch>
   );
