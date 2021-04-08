@@ -32,7 +32,12 @@ const useStyles = makeStyles(() => ({
 const FrameworkSelect = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex: 1;
+`;
+
+const SelectText = styled(Typography)`
+  margin-right: 1em;
 `;
 
 const HeaderComponent = ({ onFrameworkChange }: any) => {
@@ -50,6 +55,7 @@ const HeaderComponent = ({ onFrameworkChange }: any) => {
         </Typography>
 
         <FrameworkSelect>
+          <SelectText>Choose a framework:</SelectText>
           <Select
             value={framework}
             className={classes.select}

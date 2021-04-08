@@ -12,24 +12,15 @@ import {
   Table,
   TableBody,
   TableCell,
-  TableContainer,
   TableHead,
-  TablePagination,
   TableRow,
   TableSortLabel,
-  Toolbar,
-  Typography,
   Checkbox,
-  IconButton,
-  FormControlLabel,
-  TableFooter,
 } from "@material-ui/core";
 import MailIcon from "@material-ui/icons/Mail";
 import SendIcon from "@material-ui/icons/Send";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
-import DeleteIcon from "@material-ui/icons/Delete";
-import FilterListIcon from "@material-ui/icons/FilterList";
 import styled from "styled-components";
 
 import Code from "components/CodeComponent";
