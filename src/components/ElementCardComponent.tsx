@@ -37,6 +37,10 @@ export const SpacedChildren = styled.div`
   }
 `;
 
+export const SpacedI = styled.i`
+  margin: 0 0.1em;
+`;
+
 interface ElementCardComponentProperties {
   fullwidth?: boolean;
   title?: string;
