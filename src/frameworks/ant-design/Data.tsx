@@ -8,14 +8,9 @@ import {
   Calendar,
   Carousel,
   Comment,
+  Statistic,
 } from "antd";
-import {
-  MailOutlined,
-  DislikeOutlined,
-  LikeOutlined,
-  DislikeFilled,
-  LikeFilled,
-} from "@ant-design/icons";
+import { MailOutlined, DislikeOutlined, LikeOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
@@ -98,7 +93,7 @@ const Badges = () => {
         <Badge dot>
           <LargeMailIcon />
         </Badge>
-        <Badge status="success">
+        <Badge status="success" count={1}>
           <LargeMailIcon />
         </Badge>
       </SpacedChildren>
@@ -107,7 +102,7 @@ const Badges = () => {
           <Badge count={4}><MailOutlined /></Badge>
           <Badge count={100} overflowCount={99}><MailOutlined /></Badge>
           <Badge dot><MailOutlined /></Badge>
-          <Badge status="success"><MailOutlined /></Badge>
+          <Badge status="success" count={1}><MailOutlined /></Badge>
         `}
       </Code>
     </ElementCard>
@@ -289,20 +284,22 @@ const Comments = () => {
     <ElementCard title="Comment">
       <div>
         <Comment
-          //actions={actions}
+          actions={[<LikeOutlined />, <DislikeOutlined />]}
           author="Han Solo"
           avatar={<Avatar>H</Avatar>}
           content={<p>I've got a bad feeling about this..</p>}
-          // datetime={
-          //   <Tooltip title={moment().format('YYYY-MM-DD HH:mm:ss')}>
-          //     <span>{moment().fromNow()}</span>
-          //   </Tooltip>
-          // }
+          datetime="2021-04-08"
         />
       </div>
       <Code>
         {`
-
+          <Comment
+            actions={[<LikeOutlined />, <DislikeOutlined />]}
+            author="Han Solo"
+            avatar={<Avatar>H</Avatar>}
+            content={<p>I've got a bad feeling about this..</p>}
+            datetime="2021-04-08"
+          />
         `}
       </Code>
     </ElementCard>
@@ -310,12 +307,38 @@ const Comments = () => {
 };
 
 const Statistics = () => {
+  const deadline = Date.now() + 1000 * 60 * 60 * 24 * 2 + 1000 * 30;
+
   return (
     <ElementCard title="Statistic">
-      <div></div>
+      <div>
+        <Statistic title="Some statistic" value={112893} />
+        <Statistic
+          prefix="€"
+          title="Some prefixed statistic"
+          value={50}
+          precision={2}
+        />
+        <Statistic.Countdown
+          title="Some countdown"
+          value={deadline}
+          format="HH:mm:ss"
+        />
+      </div>
       <Code>
         {`
-
+          <Statistic title="Some statistic" value={112893} />
+          <Statistic
+            prefix="€"
+            title="Some prefixed statistic"
+            value={50}
+            precision={2}
+          />
+          <Statistic.Countdown
+            title="Some countdown"
+            value={deadline}
+            format="HH:mm:ss"
+          />
         `}
       </Code>
     </ElementCard>
