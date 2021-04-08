@@ -177,7 +177,7 @@ const Tables = () => {
     <ElementCard title="Table">
       <div>
         <Info>
-          It recommended to use another package to show more "complex" tables
+          It's recommended to use another package to show more "complex" tables
           because you need to handle every action yourself, you can enable
           pagination but that only show the buttons but not the actual
           implementation of those buttons. <br />A package like material-table

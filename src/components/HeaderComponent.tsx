@@ -50,9 +50,11 @@ const HeaderComponent = ({ onFrameworkChange }: any) => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" className={classes.title}>
-          React UI Kit Compare
-        </Typography>
+        <a href="/">
+          <Typography variant="h6" className={classes.title}>
+            React UI Kit Compare
+          </Typography>
+        </a>
 
         <FrameworkSelect>
           <SelectText>Choose a framework:</SelectText>

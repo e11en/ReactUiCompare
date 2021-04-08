@@ -9,6 +9,7 @@ import ThemingPage from "pages/ThemingPage";
 import InputPage from "pages/InputPage";
 import NotificationPage from "pages/NotificationPage";
 import DataPage from "pages/DataPage";
+import ComponentListPage from "pages/ComponentListPage";
 
 const RoutingComponent = () => {
   return (
@@ -22,6 +23,7 @@ const RoutingComponent = () => {
       <Route component={InputPage} path="/input" exact />
       <Route component={NotificationPage} path="/notifications" exact />
       <Route component={DataPage} path="/data" exact />
+      <Route component={ComponentListPage} path="/component-list" exact />
       <Route render={() => <span>Not available</span>} />
     </Switch>
   );

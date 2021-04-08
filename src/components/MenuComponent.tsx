@@ -23,14 +23,14 @@ const MenuComponent = () => {
   const { pathname } = useLocation();
   const classes = useStyles();
 
-  const MenuItem = ({ name }: { name: string }) => {
+  const MenuItem = ({ name, href }: { name: string; href?: string }) => {
     const selected = pathname?.replace("/", "") === name;
 
     return (
       <ListItem
         button
         component="a"
-        href={name.toLowerCase()}
+        href={href ? href : name.toLowerCase()}
         selected={selected}
       >
         {name}
@@ -53,6 +53,7 @@ const MenuComponent = () => {
         <Divider />
         <ListSubheader>Research</ListSubheader>
         <MenuItem name="Theming" />
+        <MenuItem name="Component list" href="component-list" />
         <MenuItem name="Conclusion" />
       </List>
     </Drawer>
