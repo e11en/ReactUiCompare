@@ -3,13 +3,16 @@ import styled from "styled-components";
 
 interface ElementCardProps {
   fullwidth?: number;
+  halfwidth?: number;
 }
 
 const ElementCard = styled(Card)<ElementCardProps>`
   height: 100%;
   padding: 1em;
   margin: 1em 1em 1em 0;
-  width: ${(props) => (props.fullwidth ? "100vw" : "825px")};
+  width: ${(props) =>
+    props.fullwidth ? "100vw" : props.halfwidth ? "calc(50% - 1em)" : "825px"};
+  min-width: 20em;
 
   & > div {
     margin-bottom: 1em;
@@ -43,17 +46,19 @@ export const SpacedI = styled.i`
 
 interface ElementCardComponentProperties {
   fullwidth?: boolean;
+  halfwidth?: boolean;
   title?: string;
   children?: React.ReactNode;
 }
 
 const ElementCardComponent = ({
   fullwidth,
+  halfwidth,
   title,
   children,
 }: ElementCardComponentProperties) => {
   return (
-    <ElementCard fullwidth={fullwidth ? 1 : 0}>
+    <ElementCard fullwidth={fullwidth ? 1 : 0} halfwidth={halfwidth ? 1 : 0}>
       <Typography variant="h6">{title}</Typography>
       <TitleDivider />
       {children}

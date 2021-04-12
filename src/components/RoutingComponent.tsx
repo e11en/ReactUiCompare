@@ -49,6 +49,11 @@ const RoutingComponent = () => {
         path="/data"
         exact
       />
+      <Route
+        component={(props: any) => <Page type="conclusion" {...props} />}
+        path="/conclusion"
+        exact
+      />
 
       <Route render={() => <span>Not available</span>} />
     </Switch>
