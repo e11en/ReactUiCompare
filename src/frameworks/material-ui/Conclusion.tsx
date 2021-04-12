@@ -18,7 +18,7 @@ export const Conclusion = () => {
         </p>
         <p>
           Theming and styling is made really easy with build in theme providers
-          and the styled components way of implementing styling.
+          and CSS in JS way of implementing styling.
         </p>
       </ElementCard>
 
