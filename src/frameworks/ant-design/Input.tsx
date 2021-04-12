@@ -322,7 +322,10 @@ const Transfers = () => {
     <ElementCard title="Transfer">
       <div>
         <Transfer
-          dataSource={[{ title: "Item 1" }, { title: "Item 2" }]}
+          dataSource={[
+            { title: "Item 1", key: "item1" },
+            { title: "Item 2", key: "item2" },
+          ]}
           titles={["Source", "Target"]}
           render={(item) => item.title}
           pagination
@@ -331,7 +334,10 @@ const Transfers = () => {
       <Code>
         {`
           <Transfer
-            dataSource={[{ title: "Item 1" }, { title: "Item 2" }]}
+            dataSource={[
+              { title: "Item 1", key: "item1" },
+              { title: "Item 2", key: "item2" },
+            ]}
             titles={["Source", "Target"]}
             render={(item) => item.title}
             pagination

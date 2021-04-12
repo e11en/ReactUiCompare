@@ -130,7 +130,7 @@ const NotificationBox = () => {
   const error = () => notification.error(notificationContent);
 
   return (
-    <ElementCard title="Notifications">
+    <ElementCard title="Notification">
       <SpacedChildren>
         <Button onClick={info}>Open info notification</Button>
         <Button onClick={success}>Open success notification</Button>
@@ -159,9 +159,9 @@ const NotificationBox = () => {
   );
 };
 
-const Popconfirms = () => {
+const Popover = () => {
   return (
-    <ElementCard title="Popconfirm">
+    <ElementCard title="Popover">
       <SpacedChildren>
         <Popconfirm title="Some popconfirm">
           <Button>Show popover</Button>
@@ -185,7 +185,7 @@ export const Notification = () => {
       <Alerts />
       <Messages />
       <NotificationBox />
-      <Popconfirms />
+      <Popover />
     </FlexWrapper>
   );
 };

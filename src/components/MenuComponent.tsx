@@ -15,6 +15,7 @@ const useStyles = makeStyles(() => ({
       top: "64px",
       width: "10em",
       position: "absolute",
+      height: "calc(100vh - 64px)",
     },
   },
 }));
@@ -47,7 +48,7 @@ const MenuComponent = () => {
         <MenuItem name="Surface" />
         <MenuItem name="Navigation" />
         <MenuItem name="Input" />
-        <MenuItem name="Notifications" />
+        <MenuItem name="Notification" />
         <MenuItem name="Data" />
 
         <Divider />

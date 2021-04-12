@@ -58,6 +58,12 @@ const MainPage = () => {
         logo="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
         description="A highly customizable yet opinionated framework made by XTech with all the components you can think of. The community is certainly present but there have been issues with repo's and website being down."
       />
+      <FrameworkCard
+        name="Reakit"
+        site="https://reakit.io/docs/get-started/"
+        logo="https://user-images.githubusercontent.com/3068563/55114952-118f6b00-50c2-11e9-8879-d047e5686284.png"
+        description="A toolkit in active development with great potential but is definitely not there yet."
+      />
     </Container>
   );
 };

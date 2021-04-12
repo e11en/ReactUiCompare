@@ -40,8 +40,8 @@ const RoutingComponent = () => {
         exact
       />
       <Route
-        component={(props: any) => <Page type="notifications" {...props} />}
-        path="/notifications"
+        component={(props: any) => <Page type="notification" {...props} />}
+        path="/notification"
         exact
       />
       <Route

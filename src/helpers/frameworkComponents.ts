@@ -175,4 +175,20 @@ export const frameworks: any = {
       "Upload button": 1,
     },
   },
+  Reakit: {
+    name: "Reakit",
+    components: {
+      Button: 1,
+      "Button group": 1,
+      Checkbox: 1,
+      Divider: 1,
+      Menu: 1,
+      Modal: 1,
+      Radio: 1,
+      Tabs: 1,
+      "Text input": 1,
+      Tooltip: 1,
+      "Top bar": 1,
+    },
+  },
 };

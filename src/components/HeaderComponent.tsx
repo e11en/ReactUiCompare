@@ -66,6 +66,7 @@ const HeaderComponent = ({ onFrameworkChange }: any) => {
           >
             <MenuItem value={Frameworks.AntDesign}>Ant Design</MenuItem>
             <MenuItem value={Frameworks.MaterialUi}>Material-UI</MenuItem>
+            <MenuItem value={Frameworks.Reakit}>Reakit</MenuItem>
           </Select>
         </FrameworkSelect>
       </Toolbar>

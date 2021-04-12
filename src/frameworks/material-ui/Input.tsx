@@ -60,14 +60,14 @@ const Fields = () => {
       </div>
       <Code>
         {`
-          <SpacedTextField label="Standard" />
-          <SpacedTextField label="Filled" variant="filled" />
-          <SpacedTextField label="Outlined" variant="outlined" />
-          <SpacedTextField label="Small" variant="outlined" size="small" />
-          <SpacedTextField label="Required" required />
-          <SpacedTextField label="Error" error />
-          <SpacedTextField label="Multiline" multiline />
-          <SpacedTextField label="Adornments"
+          <TextField label="Standard" />
+          <TextField label="Filled" variant="filled" />
+          <TextField label="Outlined" variant="outlined" />
+          <TextField label="Small" variant="outlined" size="small" />
+          <TextField label="Required" required />
+          <TextField label="Error" error />
+          <TextField label="Multiline" multiline />
+          <TextField label="Adornments"
             InputProps={{
               startAdornment: <InputAdornment position="start">http://</InputAdornment>,
               endAdornment: <InputAdornment position="end">.com</InputAdornment>
