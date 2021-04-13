@@ -152,19 +152,6 @@ const CheckBoxes = () => {
   );
 };
 
-const DateTimePickers = () => {
-  return (
-    <ElementCard title="Date time pickers">
-      <div></div>
-      <Code>
-        {`
-
-        `}
-      </Code>
-    </ElementCard>
-  );
-};
-
 const Radios = () => {
   return (
     <ElementCard title="Radios">
@@ -337,7 +324,6 @@ export const Input = () => {
     <FlexWrapper>
       <Fields />
       <CheckBoxes />
-      <DateTimePickers />
       <Radios />
       <Selects />
       <Sliders />
