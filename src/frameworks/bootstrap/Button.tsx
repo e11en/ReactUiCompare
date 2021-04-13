@@ -51,7 +51,7 @@ const ButtonVariations = () => {
       </div>
       <Code>
         {`
-
+          <Button variant="primary" size="lg" block>Block button</Button>
         `}
       </Code>
     </ElementCard>
