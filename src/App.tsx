@@ -28,8 +28,8 @@ const AppComponent = () => {
   return (
     <FrameworkContext.Provider value={framework}>
       <BrowserRouter>
-        <Header onFrameworkChange={onFrameworkChange} />
-        <Menu />
+        <Header />
+        <Menu onFrameworkChange={onFrameworkChange} />
         <Content>
           <Routing />
         </Content>
