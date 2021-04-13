@@ -11,6 +11,16 @@ export const Conclusion = () => {
           look and feel. There is great documentation available explaining how
           to do this.
         </p>
+        <p>
+          They have a bunch of components that have a bunch of features and
+          styles build-in.
+        </p>
+        <p>
+          There a handful of hooks available that makes implementation easier
+          and requires less redundancy which is great. Example: there is the
+          "useDisclosure" hook which replaces defining open and closing state
+          for a dialog for instance.
+        </p>
       </ElementCard>
 
       <ElementCard halfwidth title="Meh">
@@ -21,6 +31,10 @@ export const Conclusion = () => {
           performance sensitive, you might notice the footprint of your app
           grows. We recommend you compare with alternatives before making the
           decision to use Chakra."
+        </p>
+        <p>
+          I did found a bug while testing the "Tabs" component and I'm missing
+          some more input field like date and time.
         </p>
       </ElementCard>
 

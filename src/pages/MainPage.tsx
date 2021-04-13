@@ -56,7 +56,7 @@ const MainPage = () => {
         name="Chakra UI"
         site="https://chakra-ui.com/docs/getting-started"
         logo="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/logo/logomark-colored.svg"
-        description=""
+        description="The new kid on the block that's given the right example by having focus on accessability and customization with their bundle of components."
       />
       <FrameworkCard
         name="Material UI"
