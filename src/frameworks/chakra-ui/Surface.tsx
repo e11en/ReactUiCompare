@@ -1,40 +1,27 @@
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from "@chakra-ui/react";
+
 import Code from "components/CodeComponent";
-import ElementCard from "components/ElementCardComponent";
+import ElementCard, { SpacedChildren } from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 
-const AppToolBar = () => {
+const Boxes = () => {
   return (
-    <ElementCard title="App tool bar">
-      <div></div>
+    <ElementCard title="Box">
+      <SpacedChildren>
+        <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
+          A box
+        </Box>
+      </SpacedChildren>
       <Code>
         {`
-
-        `}
-      </Code>
-    </ElementCard>
-  );
-};
-
-const Papers = () => {
-  return (
-    <ElementCard title="Paper">
-      <div></div>
-      <Code>
-        {`
-
-        `}
-      </Code>
-    </ElementCard>
-  );
-};
-
-const Cards = () => {
-  return (
-    <ElementCard title="Card">
-      <div></div>
-      <Code>
-        {`
-
+          <Box borderWidth="1px" borderRadius="lg" overflow="hidden">A box</Box>
         `}
       </Code>
     </ElementCard>
@@ -44,10 +31,52 @@ const Cards = () => {
 const Accordions = () => {
   return (
     <ElementCard title="Accordion">
-      <div></div>
+      <div>
+        <Accordion allowToggle>
+          <AccordionItem>
+            <AccordionButton>
+              <Box flex={1} textAlign="left">
+                Accordion 1
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+            <AccordionPanel>Some text</AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <AccordionButton>
+              <Box flex={1} textAlign="left">
+                Accordion 2
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+            <AccordionPanel>Some text</AccordionPanel>
+          </AccordionItem>
+        </Accordion>
+      </div>
       <Code>
         {`
+          <Accordion allowToggle>
+            <AccordionItem>
+              <AccordionButton>
+                <Box flex={1} textAlign="left">
+                  Accordion 1
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel>Some text</AccordionPanel>
+            </AccordionItem>
 
+            <AccordionItem>
+              <AccordionButton>
+                <Box flex={1} textAlign="left">
+                  Accordion 2
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+              <AccordionPanel>Some text</AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         `}
       </Code>
     </ElementCard>
@@ -57,9 +86,7 @@ const Accordions = () => {
 export const Surface = () => {
   return (
     <FlexWrapper>
-      <AppToolBar />
-      <Papers />
-      <Cards />
+      <Boxes />
       <Accordions />
     </FlexWrapper>
   );
