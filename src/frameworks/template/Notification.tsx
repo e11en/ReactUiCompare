@@ -1,5 +1,5 @@
 import Code from "components/CodeComponent";
-import ElementCard, { SpacedChildren } from "components/ElementCardComponent";
+import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 
 const Dialogs = () => {
@@ -28,11 +28,25 @@ const Alerts = () => {
   );
 };
 
+const Popover = () => {
+  return (
+    <ElementCard title="Popover">
+      <div></div>
+      <Code>
+        {`
+
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
 export const Notification = () => {
   return (
     <FlexWrapper>
       <Dialogs />
       <Alerts />
+      <Popover />
     </FlexWrapper>
   );
 };

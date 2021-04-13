@@ -1,7 +1,6 @@
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
-import Info from "components/InfoComponent";
 
 const Fields = () => {
   return (

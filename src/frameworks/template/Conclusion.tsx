@@ -1,6 +1,7 @@
+import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
+
 import FlexWrapper from "components/FlexWrapperComponent";
 import ElementCard from "components/ElementCardComponent";
-import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
 
 export const Conclusion = () => {
   return (

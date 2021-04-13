@@ -28,11 +28,25 @@ const Alerts = () => {
   );
 };
 
+const Popover = () => {
+  return (
+    <ElementCard title="Popover">
+      <div></div>
+      <Code>
+        {`
+
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
 export const Notification = () => {
   return (
     <FlexWrapper>
       <Dialogs />
       <Alerts />
+      <Popover />
     </FlexWrapper>
   );
 };

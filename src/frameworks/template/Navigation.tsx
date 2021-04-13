@@ -1,5 +1,5 @@
 import Code from "components/CodeComponent";
-import ElementCard, { GreyBox } from "components/ElementCardComponent";
+import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
 
 const BottomNav = () => {

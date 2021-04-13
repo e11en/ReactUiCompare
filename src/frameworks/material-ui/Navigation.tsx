@@ -82,19 +82,14 @@ const Breadcrumb = () => {
 };
 
 const Drawers = () => {
-  const [state, setState] = useState({
+  const [state, setState] = useState<any>({
     top: false,
     left: false,
     bottom: false,
     right: false,
   });
 
-  const directions: ("left" | "right" | "top" | "bottom")[] = [
-    "left",
-    "right",
-    "top",
-    "bottom",
-  ];
+  const directions = ["left", "right", "top", "bottom"];
 
   const toggleDrawer = (anchor: string, open: boolean) => () =>
     setState({ ...state, [anchor]: open });
@@ -103,7 +98,7 @@ const Drawers = () => {
     <ElementCard title="Drawer">
       <div>
         <div>
-          {directions.map((anchor) => (
+          {directions.map((anchor: any) => (
             <React.Fragment key={anchor}>
               <Button onClick={toggleDrawer(anchor, true)} variant="outlined">
                 {anchor}
