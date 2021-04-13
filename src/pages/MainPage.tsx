@@ -47,16 +47,22 @@ const MainPage = () => {
   return (
     <Container>
       <FrameworkCard
-        name="Material UI"
-        site="https://material-ui.com/"
-        logo="https://material-ui.com/static/logo_raw.svg"
-        description="An opinionated framework with a bunch of components made by Google. It's been actively developed and has a large community."
-      />
-      <FrameworkCard
         name="Ant Design"
         site="https://ant.design/components/overview/"
         logo="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
         description="A highly customizable yet opinionated framework made by XTech with all the components you can think of. The community is certainly present but there have been issues with repo's and website being down."
+      />
+      <FrameworkCard
+        name="Chakra UI"
+        site="https://chakra-ui.com/docs/getting-started"
+        logo="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/logo/logomark-colored.svg"
+        description=""
+      />
+      <FrameworkCard
+        name="Material UI"
+        site="https://material-ui.com/"
+        logo="https://material-ui.com/static/logo_raw.svg"
+        description="An opinionated framework with a bunch of components made by Google. It's been actively developed and has a large community."
       />
       <FrameworkCard
         name="Reakit"

@@ -65,6 +65,7 @@ const HeaderComponent = ({ onFrameworkChange }: any) => {
             onChange={onChangeFramework}
           >
             <MenuItem value={Frameworks.AntDesign}>Ant Design</MenuItem>
+            <MenuItem value={Frameworks.ChakraUI}>Chakra UI</MenuItem>
             <MenuItem value={Frameworks.MaterialUi}>Material-UI</MenuItem>
             <MenuItem value={Frameworks.Reakit}>Reakit</MenuItem>
           </Select>

@@ -4,6 +4,7 @@ export const Frameworks = {
   MaterialUi: "material-ui",
   AntDesign: "ant-design",
   Reakit: "reakit",
+  ChakraUI: "chakra-ui",
 };
 
 const FrameworkContext = React.createContext(Frameworks.MaterialUi);
