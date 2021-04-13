@@ -45,6 +45,17 @@ import {
   Surface as ChakraUISurface,
   Theming as ChakraUITheming,
 } from "frameworks/chakra-ui";
+import {
+  Button as BootstrapButton,
+  Conclusion as BootstrapConclusion,
+  Data as BootstrapData,
+  Input as BootstrapInput,
+  Layout as BootstrapLayout,
+  Navigation as BootstrapNavigation,
+  Notification as BootstrapNotification,
+  Surface as BootstrapSurface,
+  Theming as BootstrapTheming,
+} from "frameworks/bootstrap";
 
 const Page = ({ type }: any) => {
   const framework = useContext(FrameworkContext);
@@ -57,52 +68,61 @@ const Page = ({ type }: any) => {
         [Frameworks.MaterialUi]: <MaterialUIButton />,
         [Frameworks.Reakit]: <ReakitButton />,
         [Frameworks.ChakraUI]: <ChakraUIButton />,
+        [Frameworks.Bootstrap]: <BootstrapButton />,
       },
       conclusion: {
         [Frameworks.AntDesign]: <AntDesignConclusion />,
         [Frameworks.MaterialUi]: <MaterialUIConclusion />,
         [Frameworks.Reakit]: <ReakitConclusion />,
         [Frameworks.ChakraUI]: <ChakraUIConclusion />,
+        [Frameworks.Bootstrap]: <BootstrapConclusion />,
       },
       data: {
         [Frameworks.AntDesign]: <AntDesignData />,
         [Frameworks.MaterialUi]: <MaterialUIData />,
         [Frameworks.ChakraUI]: <ChakraUIData />,
+        [Frameworks.Bootstrap]: <BootstrapData />,
       },
       input: {
         [Frameworks.AntDesign]: <AntDesignInput />,
         [Frameworks.MaterialUi]: <MaterialUIInput />,
         [Frameworks.Reakit]: <ReakitInput />,
         [Frameworks.ChakraUI]: <ChakraUIInput />,
+        [Frameworks.Bootstrap]: <BootstrapInput />,
       },
       layout: {
         [Frameworks.AntDesign]: <AntDesignLayout />,
         [Frameworks.MaterialUi]: <MaterialUILayout />,
         [Frameworks.ChakraUI]: <ChakraUILayout />,
+        [Frameworks.Bootstrap]: <BootstrapLayout />,
       },
       navigation: {
         [Frameworks.AntDesign]: <AntDesignNavigation />,
         [Frameworks.MaterialUi]: <MaterialUINavigation />,
         [Frameworks.Reakit]: <ReakitNavigation />,
         [Frameworks.ChakraUI]: <ChakraUINavigation />,
+        [Frameworks.Bootstrap]: <BootstrapNavigation />,
       },
       notification: {
         [Frameworks.AntDesign]: <AntDesignNotification />,
         [Frameworks.MaterialUi]: <MaterialUINotification />,
         [Frameworks.Reakit]: <ReakitNotification />,
         [Frameworks.ChakraUI]: <ChakraUINotification />,
+        [Frameworks.Bootstrap]: <BootstrapNotification />,
       },
       surface: {
         [Frameworks.AntDesign]: <AntDesignSurface />,
         [Frameworks.MaterialUi]: <MaterialUISurface />,
         [Frameworks.Reakit]: <ReakitSurface />,
         [Frameworks.ChakraUI]: <ChakraUISurface />,
+        [Frameworks.Bootstrap]: <BootstrapSurface />,
       },
       theming: {
         [Frameworks.AntDesign]: <AntDesignTheming />,
         [Frameworks.MaterialUi]: <MaterialUITheming />,
         [Frameworks.Reakit]: <ReakitTheming />,
         [Frameworks.ChakraUI]: <ChakraUITheming />,
+        [Frameworks.Bootstrap]: <BootstrapTheming />,
       },
     },
     type

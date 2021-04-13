@@ -64,6 +64,7 @@ const MenuComponent = ({ onFrameworkChange }: any) => {
           onChange={onChangeFramework}
         >
           <SelectItem value={Frameworks.AntDesign}>Ant Design</SelectItem>
+          <SelectItem value={Frameworks.Bootstrap}>Bootstrap</SelectItem>
           <SelectItem value={Frameworks.ChakraUI}>Chakra UI</SelectItem>
           <SelectItem value={Frameworks.MaterialUi}>Material-UI</SelectItem>
           <SelectItem value={Frameworks.Reakit}>Reakit</SelectItem>

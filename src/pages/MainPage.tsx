@@ -70,6 +70,12 @@ const MainPage = () => {
         logo="https://user-images.githubusercontent.com/3068563/55114952-118f6b00-50c2-11e9-8879-d047e5686284.png"
         description="A toolkit in active development with great potential but is definitely not there yet."
       />
+      <FrameworkCard
+        name="React Bootstrap"
+        site="https://react-bootstrap.github.io/getting-started/introduction/"
+        logo="https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/www/static/logo.svg"
+        description="Ye old bootstrap, who didn't grow up with writing a million bootstrap classes!? Luckily it's ported to React so you don't have to think that hard anymore."
+      />
     </Container>
   );
 };
