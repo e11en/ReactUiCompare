@@ -75,7 +75,6 @@ const MenuComponent = ({ onFrameworkChange }: any) => {
           <SelectItem value={Frameworks.ChakraUI}>Chakra UI</SelectItem>
           <SelectItem value={Frameworks.MaterialUi}>Material-UI</SelectItem>
           <SelectItem value={Frameworks.Reakit}>Reakit</SelectItem>
-          <SelectItem value={Frameworks.SemanticUI}>SemanticUI</SelectItem>
         </Select>
 
         <Divider />

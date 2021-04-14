@@ -89,12 +89,6 @@ const MainPage = () => {
           logo="https://raw.githubusercontent.com/react-bootstrap/react-bootstrap/master/www/static/logo.svg"
           description="Ye old bootstrap, who didn't grow up with writing a million bootstrap classes!? Luckily it's ported to React so you don't have to think that hard anymore."
         />
-        <FrameworkCard
-          name="Semantic UI"
-          site="https://semantic-ui.com/introduction/getting-started.html"
-          logo="https://semantic-ui.com/images/logo.png"
-          description=""
-        />
       </Container>
 
       <Divider />
@@ -156,6 +150,12 @@ const MainPage = () => {
           site="https://www.primefaces.org/primereact/showcase/#/setup"
           logo="https://raw.githubusercontent.com/primefaces/primereact/master/public/showcase/images/logo.png"
           description="A design agnostic UI kit where by using themes you can style your app to use Material, Fluent UI, Bootstrap or your own theme. But loads large styling files like you did in 2010 so not a viable option in this day and age. "
+        />
+        <FrameworkCard
+          name="Semantic UI"
+          site="https://semantic-ui.com/introduction/getting-started.html"
+          logo="https://semantic-ui.com/images/logo.png"
+          description="Hasn't been actively maintained since 2018."
         />
       </Container>
     </>

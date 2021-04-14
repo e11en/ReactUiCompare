@@ -6,7 +6,6 @@ export const Frameworks = {
   Reakit: "reakit",
   ChakraUI: "chakra-ui",
   Bootstrap: "bootstrap",
-  SemanticUI: "semantic-ui",
 };
 
 const FrameworkContext = React.createContext(Frameworks.MaterialUi);

@@ -56,17 +56,6 @@ import {
   Surface as BootstrapSurface,
   Theming as BootstrapTheming,
 } from "frameworks/bootstrap";
-import {
-  Button as SemanticUIButton,
-  Conclusion as SemanticUIConclusion,
-  Data as SemanticUIData,
-  Input as SemanticUIInput,
-  Layout as SemanticUILayout,
-  Navigation as SemanticUINavigation,
-  Notification as SemanticUINotification,
-  Surface as SemanticUISurface,
-  Theming as SemanticUITheming,
-} from "frameworks/semantic-ui";
 
 const Page = ({ type }: any) => {
   const framework = useContext(FrameworkContext);
@@ -80,7 +69,6 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitButton />,
         [Frameworks.ChakraUI]: <ChakraUIButton />,
         [Frameworks.Bootstrap]: <BootstrapButton />,
-        [Frameworks.SemanticUI]: <SemanticUIButton />,
       },
       conclusion: {
         [Frameworks.AntDesign]: <AntDesignConclusion />,
@@ -88,14 +76,12 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitConclusion />,
         [Frameworks.ChakraUI]: <ChakraUIConclusion />,
         [Frameworks.Bootstrap]: <BootstrapConclusion />,
-        [Frameworks.SemanticUI]: <SemanticUIConclusion />,
       },
       data: {
         [Frameworks.AntDesign]: <AntDesignData />,
         [Frameworks.MaterialUi]: <MaterialUIData />,
         [Frameworks.ChakraUI]: <ChakraUIData />,
         [Frameworks.Bootstrap]: <BootstrapData />,
-        [Frameworks.SemanticUI]: <SemanticUIData />,
       },
       input: {
         [Frameworks.AntDesign]: <AntDesignInput />,
@@ -103,14 +89,12 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitInput />,
         [Frameworks.ChakraUI]: <ChakraUIInput />,
         [Frameworks.Bootstrap]: <BootstrapInput />,
-        [Frameworks.SemanticUI]: <SemanticUIInput />,
       },
       layout: {
         [Frameworks.AntDesign]: <AntDesignLayout />,
         [Frameworks.MaterialUi]: <MaterialUILayout />,
         [Frameworks.ChakraUI]: <ChakraUILayout />,
         [Frameworks.Bootstrap]: <BootstrapLayout />,
-        [Frameworks.SemanticUI]: <SemanticUILayout />,
       },
       navigation: {
         [Frameworks.AntDesign]: <AntDesignNavigation />,
@@ -118,7 +102,6 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitNavigation />,
         [Frameworks.ChakraUI]: <ChakraUINavigation />,
         [Frameworks.Bootstrap]: <BootstrapNavigation />,
-        [Frameworks.SemanticUI]: <SemanticUINavigation />,
       },
       notification: {
         [Frameworks.AntDesign]: <AntDesignNotification />,
@@ -126,7 +109,6 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitNotification />,
         [Frameworks.ChakraUI]: <ChakraUINotification />,
         [Frameworks.Bootstrap]: <BootstrapNotification />,
-        [Frameworks.SemanticUI]: <SemanticUINotification />,
       },
       surface: {
         [Frameworks.AntDesign]: <AntDesignSurface />,
@@ -134,7 +116,6 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitSurface />,
         [Frameworks.ChakraUI]: <ChakraUISurface />,
         [Frameworks.Bootstrap]: <BootstrapSurface />,
-        [Frameworks.SemanticUI]: <SemanticUISurface />,
       },
       theming: {
         [Frameworks.AntDesign]: <AntDesignTheming />,
@@ -142,7 +123,6 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitTheming />,
         [Frameworks.ChakraUI]: <ChakraUITheming />,
         [Frameworks.Bootstrap]: <BootstrapTheming />,
-        [Frameworks.SemanticUI]: <SemanticUITheming />,
       },
     },
     type
