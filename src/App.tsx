@@ -1,16 +1,28 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 
 import FrameworkContext, { Frameworks } from "./state/FrameworkContext";
 import Header from "./components/HeaderComponent";
 import Menu from "./components/MenuComponent";
 import Routing from "./components/RoutingComponent";
-import { useEffect, useState } from "react";
 
 const Content = styled.div`
   padding: 1em;
   margin-left: 10em;
 `;
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#d78b9c",
+    },
+    secondary: {
+      main: "#46ACDB",
+    },
+  },
+});
 
 const AppComponent = () => {
   const [framework, setFramework] = useState(Frameworks.AntDesign);
@@ -28,8 +40,10 @@ const AppComponent = () => {
   return (
     <FrameworkContext.Provider value={framework}>
       <BrowserRouter>
-        <Header />
-        <Menu onFrameworkChange={onFrameworkChange} />
+        <ThemeProvider theme={theme}>
+          <Header />
+          <Menu onFrameworkChange={onFrameworkChange} />
+        </ThemeProvider>
         <Content>
           <Routing />
         </Content>

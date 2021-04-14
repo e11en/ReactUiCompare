@@ -10,6 +10,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { useLocation } from "react-router-dom";
 import { useContext } from "react";
+import styled from "styled-components";
 
 import FrameworkContext, { Frameworks } from "state/FrameworkContext";
 
@@ -28,6 +29,12 @@ const useStyles = makeStyles(() => ({
     margin: "-0.5em 0.1em 0.5em",
   },
 }));
+
+const Bottom = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+`;
 
 const MenuComponent = ({ onFrameworkChange }: any) => {
   const { pathname } = useLocation();
@@ -86,6 +93,17 @@ const MenuComponent = ({ onFrameworkChange }: any) => {
         <MenuItem name="Component list" href="component-list" />
         <MenuItem name="Conclusion" />
       </List>
+
+      <Bottom>
+        <ListItem
+          button
+          component="a"
+          href="https://www.npmtrends.com/antd-vs-@chakra-ui/react-vs-@material-ui/core-vs-reakit-vs-react-bootstrap-vs-semantic-ui"
+          target="_blank"
+        >
+          NPM downloads
+        </ListItem>
+      </Bottom>
     </Drawer>
   );
 };
