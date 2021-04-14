@@ -11,6 +11,7 @@ import {
   Layout as AntDesignLayout,
   Navigation as AntDesignNavigation,
   Notification as AntDesignNotification,
+  RealLife as AntDesignRealLife,
   Surface as AntDesignSurface,
   Theming as AntDesignTheming,
 } from "frameworks/ant-design";
@@ -22,6 +23,7 @@ import {
   Layout as MaterialUILayout,
   Navigation as MaterialUINavigation,
   Notification as MaterialUINotification,
+  RealLife as MaterialUIRealLife,
   Surface as MaterialUISurface,
   Theming as MaterialUITheming,
 } from "frameworks/material-ui";
@@ -31,6 +33,7 @@ import {
   Input as ReakitInput,
   Navigation as ReakitNavigation,
   Notification as ReakitNotification,
+  RealLife as ReakitRealLife,
   Surface as ReakitSurface,
   Theming as ReakitTheming,
 } from "frameworks/reakit";
@@ -42,6 +45,7 @@ import {
   Layout as ChakraUILayout,
   Navigation as ChakraUINavigation,
   Notification as ChakraUINotification,
+  RealLife as ChakraUIRealLife,
   Surface as ChakraUISurface,
   Theming as ChakraUITheming,
 } from "frameworks/chakra-ui";
@@ -53,6 +57,7 @@ import {
   Layout as BootstrapLayout,
   Navigation as BootstrapNavigation,
   Notification as BootstrapNotification,
+  RealLife as BootstrapRealLife,
   Surface as BootstrapSurface,
   Theming as BootstrapTheming,
 } from "frameworks/bootstrap";
@@ -109,6 +114,13 @@ const Page = ({ type }: any) => {
         [Frameworks.Reakit]: <ReakitNotification />,
         [Frameworks.ChakraUI]: <ChakraUINotification />,
         [Frameworks.Bootstrap]: <BootstrapNotification />,
+      },
+      realLife: {
+        [Frameworks.AntDesign]: <AntDesignRealLife />,
+        [Frameworks.MaterialUi]: <MaterialUIRealLife />,
+        [Frameworks.Reakit]: <ReakitRealLife />,
+        [Frameworks.ChakraUI]: <ChakraUIRealLife />,
+        [Frameworks.Bootstrap]: <BootstrapRealLife />,
       },
       surface: {
         [Frameworks.AntDesign]: <AntDesignSurface />,

@@ -91,6 +91,7 @@ const MenuComponent = ({ onFrameworkChange }: any) => {
         <ListSubheader>Research</ListSubheader>
         <MenuItem name="Theming" />
         <MenuItem name="Component list" href="component-list" />
+        <MenuItem name="Real life" href="real-life" />
         <MenuItem name="Conclusion" />
       </List>
 

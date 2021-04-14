@@ -50,6 +50,11 @@ const RoutingComponent = () => {
         exact
       />
       <Route
+        component={(props: any) => <Page type="realLife" {...props} />}
+        path="/real-life"
+        exact
+      />
+      <Route
         component={(props: any) => <Page type="conclusion" {...props} />}
         path="/conclusion"
         exact
