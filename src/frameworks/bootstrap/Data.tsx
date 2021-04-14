@@ -1,8 +1,9 @@
-import { Badge, Carousel } from "react-bootstrap";
+import { Badge, Carousel, ListGroup, Table } from "react-bootstrap";
 
 import Code from "components/CodeComponent";
 import ElementCard, { SpacedChildren } from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";
+import { tableData } from "helpers/data";
 
 const Avatars = () => {
   return (
@@ -37,39 +38,47 @@ const Avatars = () => {
   );
 };
 
-const Badges = () => {
-  return (
-    <ElementCard title="Badge">
-      <div></div>
-      <Code>
-        {`
-
-        `}
-      </Code>
-    </ElementCard>
-  );
-};
-
-const Chips = () => {
-  return (
-    <ElementCard title="Chip">
-      <div></div>
-      <Code>
-        {`
-
-        `}
-      </Code>
-    </ElementCard>
-  );
-};
-
 const Lists = () => {
   return (
     <ElementCard title="List">
-      <div></div>
+      <div>
+        <ListGroup>
+          <ListGroup.Item active>Active</ListGroup.Item>
+          <ListGroup.Item disabled>Disabled</ListGroup.Item>
+          <ListGroup.Item action>Action</ListGroup.Item>
+        </ListGroup>
+
+        <ListGroup variant="flush">
+          <ListGroup.Item>Item 1</ListGroup.Item>
+          <ListGroup.Item>Item 2</ListGroup.Item>
+          <ListGroup.Item>Item 3</ListGroup.Item>
+        </ListGroup>
+
+        <ListGroup horizontal>
+          <ListGroup.Item>Item 1</ListGroup.Item>
+          <ListGroup.Item>Item 2</ListGroup.Item>
+          <ListGroup.Item>Item 3</ListGroup.Item>
+        </ListGroup>
+      </div>
       <Code>
         {`
+          <ListGroup>
+            <ListGroup.Item active>Active</ListGroup.Item>
+            <ListGroup.Item disabled>Disabled</ListGroup.Item>
+            <ListGroup.Item action>Action</ListGroup.Item>
+          </ListGroup>
 
+          <ListGroup variant="flush">
+            <ListGroup.Item>Item 1</ListGroup.Item>
+            <ListGroup.Item>Item 2</ListGroup.Item>
+            <ListGroup.Item>Item 3</ListGroup.Item>
+          </ListGroup>
+
+          <ListGroup horizontal>
+            <ListGroup.Item>Item 1</ListGroup.Item>
+            <ListGroup.Item>Item 2</ListGroup.Item>
+            <ListGroup.Item>Item 3</ListGroup.Item>
+          </ListGroup>
         `}
       </Code>
     </ElementCard>
@@ -79,10 +88,46 @@ const Lists = () => {
 const Tables = () => {
   return (
     <ElementCard title="Table">
-      <div></div>
+      <div>
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>City</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tableData.map((d) => (
+              <tr>
+                <td>{d.id}</td>
+                <td>{d.name}</td>
+                <td>{d.city}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </div>
       <Code>
         {`
-
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableData.map((d) => (
+                <tr>
+                  <td>{d.id}</td>
+                  <td>{d.name}</td>
+                  <td>{d.city}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
         `}
       </Code>
     </ElementCard>
@@ -158,8 +203,6 @@ export const Data = () => {
   return (
     <FlexWrapper>
       <Avatars />
-      <Badges />
-      <Chips />
       <Lists />
       <Tables />
       <Carousels />

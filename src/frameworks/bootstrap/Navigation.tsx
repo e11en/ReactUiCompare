@@ -1,4 +1,4 @@
-import { Breadcrumb, Dropdown, Tabs, Tab } from "react-bootstrap";
+import { Breadcrumb, Dropdown, Tabs, Tab, Pagination } from "react-bootstrap";
 
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
@@ -120,6 +120,41 @@ const TabBar = () => {
   );
 };
 
+const Paginations = () => {
+  return (
+    <ElementCard title="Pagination">
+      <div>
+        <Pagination>
+          <Pagination.First />
+          <Pagination.Prev />
+          <Pagination.Item active>1</Pagination.Item>
+          <Pagination.Item>2</Pagination.Item>
+          <Pagination.Item disabled>3</Pagination.Item>
+          <Pagination.Ellipsis />
+          <Pagination.Item>10</Pagination.Item>
+          <Pagination.Next />
+          <Pagination.Last />
+        </Pagination>
+      </div>
+      <Code>
+        {`
+          <Pagination>
+            <Pagination.First />
+            <Pagination.Prev />
+            <Pagination.Item active>1</Pagination.Item>
+            <Pagination.Item>2</Pagination.Item>
+            <Pagination.Item disabled>3</Pagination.Item>
+            <Pagination.Ellipsis />
+            <Pagination.Item>10</Pagination.Item>
+            <Pagination.Next />
+            <Pagination.Last />
+          </Pagination>
+        `}
+      </Code>
+    </ElementCard>
+  );
+};
+
 export const Navigation = () => {
   return (
     <FlexWrapper>
@@ -127,6 +162,7 @@ export const Navigation = () => {
       <OverlayMenu />
       <TabBar />
       <BottomNav />
+      <Paginations />
     </FlexWrapper>
   );
 };
