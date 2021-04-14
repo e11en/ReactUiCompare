@@ -31,7 +31,8 @@ export const Conclusion = () => {
         </p>
         <p>
           You still make heavy use of class names which might be a matter of
-          taste of that's pro or a con.
+          taste of that's pro or a con. Some components even force you to set an
+          id.
         </p>
         <p>
           Is build as a Bootstrap port so nothing new to see and also minimal
