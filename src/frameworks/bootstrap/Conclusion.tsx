@@ -36,7 +36,8 @@ export const Conclusion = () => {
         <p>
           Is build as a Bootstrap port so nothing new to see and also minimal
           use of React features. For every element you need to use another
-          component instead of just passing a property to the main component.
+          component instead of just passing a property to the main component. It
+          feels like using ye old HTML instead of JSX.
         </p>
       </ElementCard>
 

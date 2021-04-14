@@ -74,7 +74,6 @@ const Sliders = () => {
       <Code>
         {`
 
-        />
         `}
       </Code>
     </ElementCard>
