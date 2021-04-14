@@ -46,13 +46,14 @@ export const Conclusion = () => {
         <p>
           Because of it's rich history it's probably here to stay but it doesn't
           use the true React power so it might not be the #2 most downloaded UI
-          package for much longer.
+          package for much longer. There is no news about making this package
+          anything other than a wrapper around Bootstrap.
         </p>
       </ElementCard>
 
       <ElementCard halfwidth title="Community">
         <p>
-          Again the long history of Bootstrap bring along a large community, so
+          Again the long history of Bootstrap brings along a large community, so
           no need to reinvent the wheel.
         </p>
       </ElementCard>
