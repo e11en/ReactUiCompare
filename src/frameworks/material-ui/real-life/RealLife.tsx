@@ -49,7 +49,7 @@ export const RealLife = () => {
         variant="contained"
         color="secondary"
         component="a"
-        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/material-ui/RealLife.tsx"
+        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/material-ui/real-life/RealLife.tsx"
         target="_blank"
         rel="noreferrer"
       >
