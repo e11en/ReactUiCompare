@@ -35,14 +35,12 @@ export const RealLife = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <PageWrapper id="page-wrapper">
-        <ThemeProvider theme={theme}>
-          <Header onMenuClick={() => setMenuOpen(!menuOpen)} />
-          <Menu open={menuOpen} onClose={() => setMenuOpen(false)} />
-          <Content />
-          <Footer />
-        </ThemeProvider>
+        <Header onMenuClick={() => setMenuOpen(!menuOpen)} />
+        <Menu open={menuOpen} onClose={() => setMenuOpen(false)} />
+        <Content />
+        <Footer />
       </PageWrapper>
 
       <Button
@@ -55,6 +53,6 @@ export const RealLife = () => {
       >
         Look at code
       </Button>
-    </>
+    </ThemeProvider>
   );
 };
