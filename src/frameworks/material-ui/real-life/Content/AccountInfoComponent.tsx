@@ -46,6 +46,7 @@ const AccountInfoComponent = ({ show }: any) => {
         <Grid item md={12}>
           <Input
             label="Password"
+            type="password"
             required
             onChange={(e: any) => setPassword(e.target.value)}
           />
@@ -53,6 +54,7 @@ const AccountInfoComponent = ({ show }: any) => {
         <Grid item md={12}>
           <Input
             label="Confirm password"
+            type="password"
             required
             onChange={onConfirmChange}
             error={error}

@@ -12,10 +12,10 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import ReplayIcon from "@material-ui/icons/Replay";
 
-import PersonalInfo from "./Content/PersonalInfoComponent";
-import AccountInfo from "./Content/AccountInfoComponent";
-import Done from "./Content/DoneComponent";
-import Alert from "./Content/AlertComponent";
+import PersonalInfo from "./content/PersonalInfoComponent";
+import AccountInfo from "./content/AccountInfoComponent";
+import Done from "./content/DoneComponent";
+import Alert from "./content/AlertComponent";
 
 const useStyles = makeStyles(() => ({
   paper: {

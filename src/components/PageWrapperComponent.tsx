@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -10,8 +11,12 @@ const Wrapper = styled.div`
   background-color: #edf4f7;
 `;
 
-const PageWrapperComponent = ({ children, ...props }: any) => (
-  <Wrapper {...props}>{children}</Wrapper>
+const PageWrapperComponent = forwardRef(
+  ({ children, ...props }: any, ref: any) => (
+    <Wrapper {...props} ref={ref}>
+      {children}
+    </Wrapper>
+  )
 );
 
 export default PageWrapperComponent;
