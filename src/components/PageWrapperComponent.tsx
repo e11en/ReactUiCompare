@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   position: relative;
   margin: 1em;
   border: 1px solid #d6d6d6;
-  min-height: 55em;
+  min-height: 45em;
   overflow: auto;
   min-width: 250px;
   background-color: #edf4f7;

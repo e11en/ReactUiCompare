@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "@emotion/styled";
+import { Button } from "antd";
 
 import PageWrapper from "components/PageWrapperComponent";
 import Header from "./HeaderComponent";
@@ -11,13 +12,13 @@ import { theme } from "./theme";
 // Crappy way of only theming this page unfortunately
 // Ant Design doesn't offer a way to do this without
 // overriding the styling of the examples as well.
-const Wrapper = styled(PageWrapper)`
+const Wrapper = styled.div`
   header,
   footer {
     background-color: ${theme.primary};
   }
 
-  a {
+  footer a {
     color: ${theme.secondary}!important;
 
     &:hover {
@@ -58,10 +59,20 @@ export const RealLife = () => {
 
   return (
     <Wrapper>
-      <Header onMenuClick={() => setMenuOpen(!menuOpen)} />
-      <Menu open={menuOpen} onClose={() => setMenuOpen(false)} />
-      <Content />
-      <Footer />
+      <PageWrapper>
+        <Header onMenuClick={() => setMenuOpen(!menuOpen)} />
+        <Menu open={menuOpen} onClose={() => setMenuOpen(false)} />
+        <Content />
+        <Footer />
+      </PageWrapper>
+      <Button
+        type="primary"
+        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/ant-design/real-life/RealLife.tsx"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Look at code
+      </Button>
     </Wrapper>
   );
 };

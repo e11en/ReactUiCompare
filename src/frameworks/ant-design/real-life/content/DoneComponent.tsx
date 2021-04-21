@@ -12,20 +12,28 @@ const PersonalInfoComponent = ({ show }: any) => {
     {
       title: "Name",
       dataIndex: "name",
+      key: "name",
     },
     {
       title: "Username",
       dataIndex: "username",
+      key: "username",
     },
     {
       title: "City",
       dataIndex: "city",
+      key: "city",
     },
   ];
   const data: any = [
-    { name: "John Johnson", username: "j.johnson", city: "New York" },
-    { name: "Billie Bronson", username: "b.bronson", city: "Austin" },
-    { name: "Sasha Sounders", username: "s.sounders", city: "Amsterdam" },
+    { key: 1, name: "John Johnson", username: "j.johnson", city: "New York" },
+    { key: 2, name: "Billie Bronson", username: "b.bronson", city: "Austin" },
+    {
+      key: 3,
+      name: "Sasha Sounders",
+      username: "s.sounders",
+      city: "Amsterdam",
+    },
   ];
 
   return (

@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
+import "antd/dist/antd.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import App from "./App";
