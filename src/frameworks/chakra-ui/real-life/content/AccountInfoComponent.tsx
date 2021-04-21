@@ -33,7 +33,7 @@ const AccountInfoComponent = ({ show }: any) => {
       <GridItem>
         <Grid templateRows="repeat(3, 1fr)" gap={6}>
           <GridItem>
-            <Input label="Username" required />
+            <Input label="Username" />
           </GridItem>
           <GridItem>
             <Input

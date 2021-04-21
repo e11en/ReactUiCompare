@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Card, Avatar, Collapse, PageHeader } from "antd";
 import { HeartFilled, DownOutlined } from "@ant-design/icons";
-import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
 import ElementCard, { GreyBox } from "components/ElementCardComponent";

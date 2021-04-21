@@ -62,9 +62,10 @@ const ContentComponent = () => {
 
       <Grid container spacing={3}>
         <Grid item sm={12}>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h4" className={classes.title}>
             Registration form
           </Typography>
+          <Divider />
         </Grid>
         <Grid item md={12}>
           <Stepper activeStep={activeStep}>

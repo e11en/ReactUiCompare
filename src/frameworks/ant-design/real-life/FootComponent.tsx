@@ -1,9 +1,8 @@
-import { Layout, Button, Typography, Menu, Dropdown, List } from "antd";
+import { Layout } from "antd";
 import styled from "@emotion/styled";
 
 const Footer = styled(Layout.Footer)`
   position: absolute;
-  background-color: blue;
   width: 100%;
   bottom: 0;
 `;
@@ -18,8 +17,16 @@ const FooterComponent = () => {
   return (
     <Footer>
       <Wrapper>
-        <a>Portfolio</a>
-        <a>Blog</a>
+        <a target="_blank" rel="noreferrer" href="https://ellenlangelaar.nl">
+          Portfolio
+        </a>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://blog.ellenlangelaar.nl"
+        >
+          Blog
+        </a>
       </Wrapper>
     </Footer>
   );

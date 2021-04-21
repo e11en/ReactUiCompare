@@ -7,7 +7,6 @@ import {
   notification,
   Popconfirm,
 } from "antd";
-import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
 import ElementCard, { SpacedChildren } from "components/ElementCardComponent";

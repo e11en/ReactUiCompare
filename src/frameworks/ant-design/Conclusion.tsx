@@ -31,6 +31,13 @@ export const Conclusion = () => {
           performance isn't that great. During the research the complete Ant
           Design and documentation site was offline for quite some time.
         </p>
+        <p>
+          While creating the real life page I was annoyed by the fact I needed
+          to override the colors of the examples in order to style the page. I
+          really miss a stand alone theme provider so you can style certain
+          sections of your page. I tried to override the less vars in a separate
+          file but that doesn't work.
+        </p>
       </ElementCard>
 
       <ElementCard halfwidth title="Future">

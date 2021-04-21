@@ -2,8 +2,6 @@ import { Button as AntdButton, Dropdown, Menu, Upload } from "antd";
 import { SearchOutlined, UploadOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
-import "antd/dist/antd.css";
-
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";
 import FlexWrapper from "components/FlexWrapperComponent";

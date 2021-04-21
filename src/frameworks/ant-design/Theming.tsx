@@ -30,7 +30,8 @@ const ComponentLevel = () => {
     <ElementCard title="Component styling">
       <div>
         You can style individual components by assigning a class and using plain
-        styling files or use inline styling.
+        styling files or use inline styling. Some components are still hard to
+        style because they only use the native styling like with radio buttons.
       </div>
       <Code>
         {`
