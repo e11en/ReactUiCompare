@@ -1,4 +1,5 @@
 import {
+  ChakraProvider,
   Badge,
   Kbd,
   List,
@@ -340,14 +341,16 @@ const KeyBoardKey = () => {
 
 export const Data = () => {
   return (
-    <FlexWrapper>
-      <Avatars />
-      <Badges />
-      <Tags />
-      <Lists />
-      <Tables />
-      <Statistics />
-      <KeyBoardKey />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <Avatars />
+        <Badges />
+        <Tags />
+        <Lists />
+        <Tables />
+        <Statistics />
+        <KeyBoardKey />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

@@ -1,4 +1,5 @@
 import { Button as BButton, ButtonGroup } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Code from "components/CodeComponent";
 import ElementCard, { SpacedChildren } from "components/ElementCardComponent";

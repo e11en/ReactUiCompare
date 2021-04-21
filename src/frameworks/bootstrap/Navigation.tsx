@@ -1,4 +1,5 @@
 import { Breadcrumb, Dropdown, Tabs, Tab, Pagination } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";

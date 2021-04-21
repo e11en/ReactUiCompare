@@ -1,4 +1,9 @@
-import { Button as CButton, ButtonGroup, IconButton } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  Button as CButton,
+  ButtonGroup,
+  IconButton,
+} from "@chakra-ui/react";
 import { EmailIcon, AddIcon } from "@chakra-ui/icons";
 
 import Code from "components/CodeComponent";
@@ -129,11 +134,13 @@ const ButtonGroups = () => {
 
 export const Button = () => {
   return (
-    <FlexWrapper>
-      <NormalButtons />
-      <ButtonVariations />
-      <ButtonSizes />
-      <ButtonGroups />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <NormalButtons />
+        <ButtonVariations />
+        <ButtonSizes />
+        <ButtonGroups />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

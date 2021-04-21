@@ -1,4 +1,5 @@
 import {
+  ChakraProvider,
   Checkbox,
   Editable,
   EditableInput,
@@ -321,14 +322,16 @@ const Other = () => {
 
 export const Input = () => {
   return (
-    <FlexWrapper>
-      <Fields />
-      <CheckBoxes />
-      <Radios />
-      <Selects />
-      <Sliders />
-      <Switches />
-      <Other />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <Fields />
+        <CheckBoxes />
+        <Radios />
+        <Selects />
+        <Sliders />
+        <Switches />
+        <Other />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

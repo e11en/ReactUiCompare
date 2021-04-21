@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import {
+  ChakraProvider,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -389,12 +390,14 @@ const Popovers = () => {
 
 export const Notification = () => {
   return (
-    <FlexWrapper>
-      <Dialogs />
-      <AlertDialogs />
-      <Alerts />
-      <Toasts />
-      <Popovers />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <Dialogs />
+        <AlertDialogs />
+        <Alerts />
+        <Toasts />
+        <Popovers />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

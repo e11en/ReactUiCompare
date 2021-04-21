@@ -14,6 +14,7 @@ import {
   Transfer,
   TreeSelect,
 } from "antd";
+import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
 import ElementCard, {

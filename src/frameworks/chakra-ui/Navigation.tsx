@@ -1,4 +1,5 @@
 import {
+  ChakraProvider,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -348,11 +349,13 @@ const TabBar = () => {
 
 export const Navigation = () => {
   return (
-    <FlexWrapper>
-      <Breadcrumbs />
-      <OverlayMenu />
-      <TabBar />
-      <Drawers />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <Breadcrumbs />
+        <OverlayMenu />
+        <TabBar />
+        <Drawers />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

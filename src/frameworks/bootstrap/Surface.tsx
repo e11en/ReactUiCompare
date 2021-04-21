@@ -1,5 +1,6 @@
 import { Card, Accordion, Navbar } from "react-bootstrap";
 import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Code from "components/CodeComponent";
 import ElementCard, { SpacedChildren } from "components/ElementCardComponent";

@@ -1,4 +1,5 @@
 import {
+  ChakraProvider,
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -85,9 +86,11 @@ const Accordions = () => {
 
 export const Surface = () => {
   return (
-    <FlexWrapper>
-      <Boxes />
-      <Accordions />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <Boxes />
+        <Accordions />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

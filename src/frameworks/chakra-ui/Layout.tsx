@@ -1,4 +1,5 @@
 import {
+  ChakraProvider,
   Grid,
   GridItem,
   Container,
@@ -120,10 +121,12 @@ const Other = () => {
 
 export const Layout = () => {
   return (
-    <FlexWrapper>
-      <Containers />
-      <Grids />
-      <Other />
-    </FlexWrapper>
+    <ChakraProvider>
+      <FlexWrapper>
+        <Containers />
+        <Grids />
+        <Other />
+      </FlexWrapper>
+    </ChakraProvider>
   );
 };

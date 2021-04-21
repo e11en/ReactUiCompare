@@ -1,5 +1,6 @@
 import { Container, Row, Col, Media } from "react-bootstrap";
 import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";

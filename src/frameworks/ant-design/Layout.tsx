@@ -1,5 +1,6 @@
 import { Divider, Layout as AntDesignLayout, Row, Col } from "antd";
 import styled from "styled-components";
+import "antd/dist/antd.css";
 
 import Code from "components/CodeComponent";
 import ElementCard from "components/ElementCardComponent";

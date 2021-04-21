@@ -1,4 +1,5 @@
 import { Badge, Carousel, ListGroup, Table } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Code from "components/CodeComponent";
 import ElementCard, { SpacedChildren } from "components/ElementCardComponent";
@@ -99,7 +100,7 @@ const Tables = () => {
           </thead>
           <tbody>
             {tableData.map((d) => (
-              <tr>
+              <tr key={d.id}>
                 <td>{d.id}</td>
                 <td>{d.name}</td>
                 <td>{d.city}</td>
