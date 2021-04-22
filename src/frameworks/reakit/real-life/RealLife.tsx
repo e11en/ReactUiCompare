@@ -21,7 +21,7 @@ export const RealLife = () => {
 
       <Button
         as="a"
-        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/chakra-ui/real-life/RealLife.tsx"
+        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/reakit/real-life/RealLife.tsx"
         target="_blank"
         rel="noreferrer"
       >
