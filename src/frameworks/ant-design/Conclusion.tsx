@@ -24,7 +24,8 @@ export const Conclusion = () => {
           using CSS in JS and you have to use LESS styling. The recommended way
           is overriding global styles and setting LESS variables. If we look a
           the future progress to CSS in JS this is not ideal and the biggest
-          "problem" according to other developers.
+          "problem" according to other developers. To use LESS it requires you
+          to either eject the project or jump though a bunch of hoops.
         </p>
         <p>
           The bundle size is pretty large and multiple sources say that
@@ -35,8 +36,8 @@ export const Conclusion = () => {
           While creating the real life page I was annoyed by the fact I needed
           to override the colors of the examples in order to style the page. I
           really miss a stand alone theme provider so you can style certain
-          sections of your page. I tried to override the less vars in a separate
-          file but that doesn't work.
+          sections of your page. I tried to override the LESS vars in a separate
+          file but that didn't work.
         </p>
       </ElementCard>
 

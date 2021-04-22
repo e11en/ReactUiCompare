@@ -7,6 +7,7 @@ const Wrapper = styled.div<any>`
   position: relative;
   height: 45px;
   margin-bottom: 1em;
+  border-radius: 2px;
 `;
 
 const Label = styled.label<any>`

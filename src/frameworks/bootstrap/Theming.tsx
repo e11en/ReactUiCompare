@@ -8,7 +8,8 @@ const OverallLevel = () => {
       <div>
         There is a "ThemeProvider" available but that is used to set custom
         prefixes for components and not so much to implement a global style.
-        These are set using a custom (S)CSS file
+        These are set using a custom SCSS/SASS file, you can't theme a certain
+        section of your page.
       </div>
       <Code>
         {`

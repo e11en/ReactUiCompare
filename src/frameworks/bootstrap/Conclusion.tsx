@@ -16,6 +16,12 @@ export const Conclusion = () => {
           Some (definitely not all) Bootstrap theme's are compatible so you have
           to ability to plug and play an already made theme.
         </p>
+        <p>
+          Theming is done with a SCSS file that defines the theme colors which
+          is obviously not that great, but a little bit better then a LESS file
+          because this requires you to either eject the project or jump though a
+          bunch of hoops. Still not my preference though.
+        </p>
       </ElementCard>
 
       <ElementCard halfwidth title="Meh">

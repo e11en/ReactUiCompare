@@ -7,4 +7,4 @@ export * from "./Input";
 export * from "./Notification";
 export * from "./Data";
 export * from "./Conclusion";
-export * from "./RealLife";
+export * from "./real-life/RealLife";
