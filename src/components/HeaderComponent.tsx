@@ -14,17 +14,23 @@ const Bar = styled(AppBar)`
   }
 `;
 
+const Title = styled.a`
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 const HeaderComponent = ({ onFrameworkChange }: any) => {
   const classes = useStyles();
 
   return (
     <Bar position="static">
       <Toolbar>
-        <a href="/">
+        <Title href="/">
           <Typography variant="h6" className={classes.title}>
             React UI Kit Compare
           </Typography>
-        </a>
+        </Title>
       </Toolbar>
     </Bar>
   );
