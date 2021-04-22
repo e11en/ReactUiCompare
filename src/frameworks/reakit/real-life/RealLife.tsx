@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "reakit";
 
 import PageWrapper from "components/PageWrapperComponent";
 import Header from "./HeaderComponent";
@@ -18,13 +19,14 @@ export const RealLife = () => {
         <Footer />
       </PageWrapper>
 
-      <a
-        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/template/real-life/RealLife.tsx"
+      <Button
+        as="a"
+        href="https://github1s.com/e11en/ReactUiCompare/blob/main/src/frameworks/chakra-ui/real-life/RealLife.tsx"
         target="_blank"
         rel="noreferrer"
       >
         Look at code
-      </a>
+      </Button>
     </>
   );
 };

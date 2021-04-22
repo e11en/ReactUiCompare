@@ -80,9 +80,6 @@ const ContentComponent = () => {
             </Step>
           </Stepper>
         </Grid>
-        <Grid item md={12}>
-          <Divider />
-        </Grid>
 
         <PersonalInfo show={activeStep === 0} />
         <AccountInfo show={activeStep === 1} />
