@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import {
+  createMuiTheme,
+  ThemeProvider,
+  useMediaQuery,
+} from "@material-ui/core";
 
 import FrameworkContext, { Frameworks } from "./state/FrameworkContext";
 import Header from "./components/HeaderComponent";
@@ -11,6 +15,10 @@ import Routing from "./components/RoutingComponent";
 const Content = styled.div`
   padding: 1em;
   margin-left: 10em;
+
+  @media (max-width: 540px) {
+    margin-left: 1em;
+  }
 `;
 
 const theme = createMuiTheme({
@@ -25,7 +33,9 @@ const theme = createMuiTheme({
 });
 
 const AppComponent = () => {
+  const matches = useMediaQuery("(max-width:540px)");
   const [framework, setFramework] = useState(Frameworks.AntDesign);
+  const [openMenu, setOpenMenu] = useState(matches);
 
   useEffect(() => {
     const storedFramework = localStorage.getItem("framework");
@@ -41,8 +51,12 @@ const AppComponent = () => {
     <FrameworkContext.Provider value={framework}>
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <Header />
-          <Menu onFrameworkChange={onFrameworkChange} />
+          <Header onMenuOpen={() => setOpenMenu(true)} />
+          <Menu
+            onFrameworkChange={onFrameworkChange}
+            open={openMenu}
+            onClose={() => setOpenMenu(false)}
+          />
         </ThemeProvider>
         <Content>
           <Routing />

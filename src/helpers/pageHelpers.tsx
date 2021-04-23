@@ -5,7 +5,8 @@ export const getComponentByFramework = (
 ) => {
   const frameworkComponent = components[type][framework];
 
-  if (frameworkComponent === undefined) return <span>Not available</span>;
+  if (frameworkComponent === undefined)
+    return <h3>This is not available in this kit.</h3>;
 
   return frameworkComponent;
 };

@@ -60,7 +60,7 @@ const RoutingComponent = () => {
         exact
       />
 
-      <Route render={() => <span>Not available</span>} />
+      <Route render={() => <h2>Your lack of routing concerns me..</h2>} />
     </Switch>
   );
 };

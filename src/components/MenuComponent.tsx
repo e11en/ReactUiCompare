@@ -6,6 +6,7 @@ import {
   ListSubheader,
   Select,
   MenuItem as SelectItem,
+  useMediaQuery,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useLocation } from "react-router-dom";
@@ -16,13 +17,15 @@ import FrameworkContext, { Frameworks } from "state/FrameworkContext";
 
 const useStyles = makeStyles(() => ({
   drawer: {
-    "& > div": {
-      zIndex: 0,
+    "& .MuiPaper-root": {
       top: "64px",
       width: "10em",
       position: "absolute",
       height: "calc(100vh - 64px)",
       borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
+    },
+    "& .MuiBackdrop-root": {
+      backgroundColor: "transparent",
     },
   },
   select: {
@@ -37,7 +40,8 @@ const Bottom = styled.div`
   align-items: flex-end;
 `;
 
-const MenuComponent = ({ onFrameworkChange }: any) => {
+const MenuComponent = ({ onFrameworkChange, open, onClose }: any) => {
+  const matches = useMediaQuery("(max-width:540px)");
   const { pathname } = useLocation();
   const framework = useContext(FrameworkContext);
   const classes = useStyles();
@@ -61,7 +65,12 @@ const MenuComponent = ({ onFrameworkChange }: any) => {
   };
 
   return (
-    <Drawer variant="permanent" className={classes.drawer}>
+    <Drawer
+      variant={matches ? "temporary" : "permanent"}
+      className={classes.drawer}
+      open={matches ? open : true}
+      onClose={onClose}
+    >
       <List>
         <ListSubheader>Framework</ListSubheader>
         <Select
