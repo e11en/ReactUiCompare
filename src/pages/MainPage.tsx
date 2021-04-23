@@ -95,6 +95,18 @@ const MainPage = () => {
       <Title variant="h4">Others that might be interesting</Title>
       <Container>
         <FrameworkCard
+          name="Tailwind UI"
+          site="https://tailwindui.com/documentation"
+          logo="https://www.markusantonwolf.com/media/pages/blog/tailwind-css/265298487-1596675041/tailwind-css-logo.svg"
+          description="UI kit based on the TailwindCSS framework, which is the modern equivalent of Bootstrap. It features a bunch of well documented components with a modern style. The kit is based on another Tailwind project called Headless UI which offer unstyled UI components."
+        />
+        <FrameworkCard
+          name="Baseweb"
+          site="https://baseweb.design/"
+          logo="https://bestofjs.org/logos/baseui.svg"
+          description="A kit with nice set of components that is build using styled components making it easy to theme and has build-in features like internationalization and bidirectionality."
+        />
+        <FrameworkCard
           name="Grommet"
           site="https://v2.grommet.io/components"
           svg={
@@ -115,7 +127,12 @@ const MainPage = () => {
           logo="https://fabricweb.azureedge.net/fabric-website/assets/images/fluent-ui-logo-black.png"
           description="A UI kit from Microsoft and gives that very specific Microsoft look and feel to your application."
         />
-
+        <FrameworkCard
+          name="React Suite"
+          site="https://rsuitejs.com/components/overview/"
+          logo="https://avatars.githubusercontent.com/u/19635045?s=200&v=4"
+          description="Feels like an Ant Design duplicate with even the same way of theming with LESS overrides. Unsure what the benefits of this kit are over Ant Design."
+        />
         <FrameworkCard
           name="Evergreen"
           site="https://evergreen.segment.com/components"

@@ -79,8 +79,30 @@ export const Conclusion = () => {
               <TableCell>Downloads per day</TableCell>
               <TableCell>1.752.827</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>Used in company stacks</TableCell>
+              <TableCell>1.200</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
+      </ElementCard>
+
+      <ElementCard halfwidth title="What do other people think">
+        <p>
+          Pro's:
+          <ul>
+            <li>Powerful theming engine</li>
+            <li>Very large community</li>
+            <li>Most popular and actively maintained library</li>
+            <li>Typescript friendly</li>
+          </ul>
+        </p>
+        <p>
+          Con's:
+          <ul>
+            <li>Opinionated to use Material Design styling (Google-ish)</li>
+          </ul>
+        </p>
       </ElementCard>
     </FlexWrapper>
   );

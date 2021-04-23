@@ -72,8 +72,39 @@ export const Conclusion = () => {
               <TableCell>Downloads per day</TableCell>
               <TableCell>594.150</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>Used in company stacks</TableCell>
+              <TableCell>639</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
+      </ElementCard>
+
+      <ElementCard halfwidth title="What do other people think">
+        <p>
+          Pro's:
+          <ul>
+            <li>Typescript friendly</li>
+            <li>Lots of input components</li>
+            <li>Great form handling</li>
+            <li>Easy override of component styles</li>
+            <li>Comprehensive docs</li>
+            <li>Has a library of scaffolds (reusable components)</li>
+          </ul>
+        </p>
+        <p>
+          Con's:
+          <ul>
+            <li>Not all types are exposed</li>
+            <li>Don't follow strict SemVer</li>
+            <li>Uses LESS styling</li>
+            <li>Very large bundle size</li>
+            <li>Not that great performance</li>
+            <li>Theming is difficult</li>
+            <li>Poor accessibility support</li>
+            <li>Uses global styles which may conflict.</li>
+          </ul>
+        </p>
       </ElementCard>
     </FlexWrapper>
   );

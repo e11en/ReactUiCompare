@@ -77,8 +77,34 @@ export const Conclusion = () => {
               <TableCell>Downloads per day</TableCell>
               <TableCell>825.915</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>Used in company stacks</TableCell>
+              <TableCell>10</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
+      </ElementCard>
+
+      <ElementCard halfwidth title="What do other people think">
+        <p>
+          Pro's:
+          <ul>
+            <li>Great grid system</li>
+            <li>Very well documented</li>
+            <li>Supports (some) Bootstrap 4 themes</li>
+          </ul>
+        </p>
+        <p>
+          Con's:
+          <ul>
+            <li>Not a lot of components</li>
+            <li>Doesn't have a lot of properties to work with</li>
+            <li>
+              Is not actually a UI kit and just a port of the Bootstrap CSS
+              framework
+            </li>
+          </ul>
+        </p>
       </ElementCard>
     </FlexWrapper>
   );

@@ -22,6 +22,7 @@ const useStyles = makeStyles(() => ({
       width: "10em",
       position: "absolute",
       height: "calc(100vh - 64px)",
+      borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
     },
   },
   select: {

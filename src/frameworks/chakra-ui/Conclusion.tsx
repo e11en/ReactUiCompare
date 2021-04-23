@@ -65,8 +65,33 @@ export const Conclusion = () => {
               <TableCell>Downloads per day</TableCell>
               <TableCell>77.809</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>Used in company stacks</TableCell>
+              <TableCell>36</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
+      </ElementCard>
+
+      <ElementCard halfwidth title="What do other people think">
+        <p>
+          Pro's:
+          <ul>
+            <li>Prioritizes accessibility</li>
+            <li>Build with theming in mind</li>
+            <li>Useful hooks to handle default state changes</li>
+          </ul>
+        </p>
+        <p>
+          Con's:
+          <ul>
+            <li>Not everything is IE11 supported</li>
+            <li>Mostly maintained by one person</li>
+            <li>
+              Not all components can be completely styled, example: switch
+            </li>
+          </ul>
+        </p>
       </ElementCard>
     </FlexWrapper>
   );

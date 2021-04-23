@@ -62,8 +62,29 @@ export const Conclusion = () => {
               <TableCell>Downloads per day</TableCell>
               <TableCell>91.682</TableCell>
             </TableRow>
+            <TableRow>
+              <TableCell>Used in company stacks</TableCell>
+              <TableCell>No data available</TableCell>
+            </TableRow>
           </TableBody>
         </Table>
+      </ElementCard>
+
+      <ElementCard halfwidth title="What do other people think">
+        <p>
+          Pro's:
+          <ul>
+            <li>Prioritizes accessibility</li>
+          </ul>
+        </p>
+        <p>
+          Con's:
+          <ul>
+            <li>There is no default styling</li>
+            <li>Not a lot of components</li>
+            <li>Mostly maintained by one person</li>
+          </ul>
+        </p>
       </ElementCard>
     </FlexWrapper>
   );
